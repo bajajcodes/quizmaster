@@ -35,7 +35,10 @@ struct Home: View {
                 }).vAlign(.bottom)
                 
             }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
-                QuestionsView(quizInfo: info, quizQuestions: quizQuestions)
+                QuestionsView(quizInfo: info, quizQuestions: quizQuestions){
+                    // user has succesfully finished the quiz thus update the BE and UI
+                    quizInfo?.peopleAttended += 1
+                }
             }
         }else{
             VStack(spacing: 4){

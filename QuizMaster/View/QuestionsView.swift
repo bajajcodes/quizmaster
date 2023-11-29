@@ -4,13 +4,19 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct QuestionsView: View {
-    var quizInfo: Info;
+    var quizInfo: Info
     @State var quizQuestions: [Question];
+    var onFinish: ()->()
+    
     @Environment(\.dismiss) private var dismiss
+
     @State private var progress: CGFloat = 0
     @State private var currentIndex: Int = 0
+    @State private var score: CGFloat = 0
+    @State private var showScoreCardView: Bool = false
     
     var body: some View {
         VStack(spacing: 15){
@@ -56,9 +62,16 @@ struct QuestionsView: View {
 
             }.padding(.horizontal, -15).padding(.vertical, 15)
             
-            CustomButton(title: "Next Question", onClick: {
-                withAnimation(.easeInOut){
-                    currentIndex += 1
+            CustomButton(title: currentIndex == (quizQuestions.count - 1) ? "Finish" : "Next Question", onClick: {
+                if currentIndex == (quizQuestions.count - 1){
+                    // Presenting Score Card View
+                    showScoreCardView.toggle()
+                }
+                else{
+                    withAnimation(.easeInOut){
+                        currentIndex += 1
+                        progress = CGFloat(currentIndex) / CGFloat(quizQuestions.count - 1)
+                    }
                 }
             })
             
@@ -71,6 +84,13 @@ struct QuestionsView: View {
         }
         /// This View is going to be Dark Since our background is Dark
         .environment(\.colorScheme, .dark)
+        .fullScreenCover(isPresented: $showScoreCardView) {
+            // display score in 100%
+            ScoreCardView(score: score / CGFloat(quizQuestions.count) * 100){
+                dismiss()
+                onFinish()
+            }
+        }
     }
     
     // Question View
@@ -106,6 +126,9 @@ struct QuestionsView: View {
                         withAnimation(.easeInOut){
                             quizQuestions[currentIndex].tappedAnswer = option
                         }
+                        if question.answer == option {
+                            score += 1.0
+                        }
                     }
                 }
             }.padding(.vertical, 10)}.padding(15).hAlign(.center).background {
@@ -126,6 +149,47 @@ struct QuestionsView: View {
     
     
 }
+
+// MARK: Score Card View
+struct ScoreCardView: View {
+    var score: CGFloat
+    // move to home screen
+    var onDismiss: ()->()
+    @Environment(\.dismiss) private var dismiss
+    var body: some View{
+        VStack{
+            VStack(spacing: 15){
+                Text("Result of Your Exercise")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                VStack(spacing: 15){
+                    Text("Congratulations! You\n have score")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                    //  Removing Floating Points
+                    Text(String(format: "%.0f", score) + "%")
+                        .font(.title.bold())
+                            .padding(.bottom, 10)
+                    
+                    Image("Medal").resizable().aspectRatio(contentMode: .fit).frame(height: 220)
+                }.foregroundColor(.black).padding(.horizontal, 15).padding(.vertical, 20).hAlign(.center).background{
+                    RoundedRectangle(cornerRadius: 25, style: .continuous).fill(.white)
+                }
+                
+            }.vAlign(.center)
+            
+            CustomButton(title: "Back To Home", onClick: {
+                Firestore.firestore().collection("Quiz").document("Info").updateData([
+                    "peopleAttended": FieldValue.increment(1.0)])
+                onDismiss()
+                dismiss()
+            })
+        }.padding(15).background {
+            Color("BG").ignoresSafeArea()
+        }
+    }}
 
 #Preview {
     ContentView()
