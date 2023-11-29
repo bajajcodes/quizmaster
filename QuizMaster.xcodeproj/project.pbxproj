@@ -11,6 +11,10 @@
 		8BD4D2F62B17194A00C34089 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD4D2F52B17194A00C34089 /* ContentView.swift */; };
 		8BD4D2F82B17194C00C34089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4D2F72B17194C00C34089 /* Assets.xcassets */; };
 		8BD4D2FB2B17194C00C34089 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4D2FA2B17194C00C34089 /* Preview Assets.xcassets */; };
+		8BD4D3032B17241800C34089 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD4D3022B17241800C34089 /* FirebaseAuth */; };
+		8BD4D3052B17241800C34089 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD4D3042B17241800C34089 /* FirebaseDynamicLinks */; };
+		8BD4D3072B17241800C34089 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD4D3062B17241800C34089 /* FirebaseFirestore */; };
+		8BD4D3092B1724F900C34089 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4D3082B1724F900C34089 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,7 @@
 		8BD4D2F52B17194A00C34089 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BD4D2F72B17194C00C34089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD4D2FA2B17194C00C34089 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BD4D3082B1724F900C34089 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD4D3032B17241800C34089 /* FirebaseAuth in Frameworks */,
+				8BD4D3052B17241800C34089 /* FirebaseDynamicLinks in Frameworks */,
+				8BD4D3072B17241800C34089 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,7 @@
 		8BD4D2F22B17194A00C34089 /* QuizMaster */ = {
 			isa = PBXGroup;
 			children = (
+				8BD4D3082B1724F900C34089 /* GoogleService-Info.plist */,
 				8BD4D2F32B17194A00C34089 /* QuizMasterApp.swift */,
 				8BD4D2F52B17194A00C34089 /* ContentView.swift */,
 				8BD4D2F72B17194C00C34089 /* Assets.xcassets */,
@@ -83,6 +92,11 @@
 			dependencies = (
 			);
 			name = QuizMaster;
+			packageProductDependencies = (
+				8BD4D3022B17241800C34089 /* FirebaseAuth */,
+				8BD4D3042B17241800C34089 /* FirebaseDynamicLinks */,
+				8BD4D3062B17241800C34089 /* FirebaseFirestore */,
+			);
 			productName = QuizMaster;
 			productReference = 8BD4D2F02B17194A00C34089 /* QuizMaster.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 8BD4D2E72B17194A00C34089;
+			packageReferences = (
+				8BD4D3012B17241800C34089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8BD4D2F12B17194A00C34089 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +144,7 @@
 			files = (
 				8BD4D2FB2B17194C00C34089 /* Preview Assets.xcassets in Resources */,
 				8BD4D2F82B17194C00C34089 /* Assets.xcassets in Resources */,
+				8BD4D3092B1724F900C34089 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +304,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.quizmaster.QuizMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,9 +334,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.quizmaster.QuizMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +364,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BD4D3012B17241800C34089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BD4D3022B17241800C34089 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD4D3012B17241800C34089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8BD4D3042B17241800C34089 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD4D3012B17241800C34089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		8BD4D3062B17241800C34089 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD4D3012B17241800C34089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BD4D2E82B17194A00C34089 /* Project object */;
 }
