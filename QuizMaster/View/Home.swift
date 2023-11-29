@@ -28,15 +28,15 @@ struct Home: View {
                 if(!info.rules.isEmpty){
                     RulesView(info.rules)
                 }
+            
                 
-                Button{
+                CustomButton(title: "Start Test", onClick: {
                     startQuiz.toggle()
-                }label: {
-                    Text("Start Test").font(.title3).fontWeight(.semibold).hAlign(.center).padding(.top, 15).padding(.bottom, 10).foregroundColor(.white).background(Rectangle().fill(Color("OPink")).ignoresSafeArea())
-                }.padding([.bottom, .horizontal], -15)
-                .vAlign(.bottom)
+                }).vAlign(.bottom)
                 
-            }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){}
+            }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
+                QuestionsView(quizInfo: info, quizQuestions: quizQuestions)
+            }
         }else{
             VStack(spacing: 4){
                 ProgressView()
@@ -134,5 +134,32 @@ extension View{
     
     func vAlign(_ alignment: Alignment) -> some View {
         self.frame(maxHeight: .infinity, alignment: alignment)
+    }
+}
+
+/// Making it Reusable
+struct CustomButton: View{
+    var title: String
+    var onClick: ()->()
+    
+    var body: some View{
+        Button {
+            onClick()
+        } label: {
+            Text(title)
+                .font(.title3)
+                .fontWeight(.semibold)
+                .hAlign(.center)
+                .padding(.top, 15)
+                .padding(.bottom, 10)
+                .foregroundColor(.white)
+                .background {
+                    Rectangle()
+                        .fill(Color("OPink"))
+                        .ignoresSafeArea()
+                }
+        }
+        /// - Removing Padding
+        .padding([.bottom,.horizontal], -15)
     }
 }
