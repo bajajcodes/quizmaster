@@ -2,17 +2,17 @@
 //  Info.swift
 //  QuizMaster
 //
-//  Created by Shubham Bajaj on 29/11/23.
-//
 
 import SwiftUI
 
-struct Info: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Info: Codable{
+    var title: String;
+    var peopleAttended: Int;
+    var rules: [String];
+    
+    enum CondingKeys: CodingKey {
+        case title
+        case peopleAttended
+        case rules
     }
-}
-
-#Preview {
-    Info()
 }

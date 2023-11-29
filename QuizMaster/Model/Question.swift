@@ -2,17 +2,21 @@
 //  Question.swift
 //  QuizMaster
 //
-//  Created by Shubham Bajaj on 29/11/23.
-//
+
 
 import SwiftUI
 
-struct Question: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Question: Codable{
+    var id: UUID = .init();
+    var question: String;
+    var answer: String;
+    var options: [String];
+    
+    var tappedAnswer: String  = "";
+    
+    enum CondingKeys: CodingKey {
+        case question
+        case options
+        case answer
     }
-}
-
-#Preview {
-    Question()
 }
