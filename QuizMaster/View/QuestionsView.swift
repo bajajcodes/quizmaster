@@ -7,7 +7,7 @@ import SwiftUI
 
 struct QuestionsView: View {
     var quizInfo: Info;
-    var quizQuestions: [Question];
+    @State var quizQuestions: [Question];
     @Environment(\.dismiss) private var dismiss
     @State private var progress: CGFloat = 0
     @State private var currentIndex: Int = 0
@@ -90,9 +90,25 @@ struct QuestionsView: View {
                 .foregroundColor(.black)
             VStack(spacing: 12){
                 ForEach(question.options,id: \.self) {option in
-                    OptionView(option, .gray)
+                    // Displaying Correct and Wrong answers, after user has tapped any one of the options
+                    ZStack{
+                        OptionView(option, .gray)
+                            .opacity(question.answer == option && question.tappedAnswer != "" ? 0 : 1)
+                        OptionView(option, .green)
+                            .opacity(question.answer == option && question.tappedAnswer != "" ? 1 : 0)
+                        OptionView(option, .red)
+                            .opacity(question.tappedAnswer == option && question.tappedAnswer != question.answer ? 1 : 0)
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        // -Disabling Tap if already Answer was Selected
+                        guard quizQuestions[currentIndex].tappedAnswer == "" else{return}
+                        withAnimation(.easeInOut){
+                            quizQuestions[currentIndex].tappedAnswer = option
+                        }
+                    }
                 }
-            }}.padding(15).hAlign(.center).background {
+            }.padding(.vertical, 10)}.padding(15).hAlign(.center).background {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                     .fill(.white)
             }.padding(.horizontal,15)
@@ -103,7 +119,7 @@ struct QuestionsView: View {
     func OptionView(_ option: String, _ tint: Color)-> some View {
         Text(option).foregroundColor(tint).padding(.horizontal, 15).padding(.vertical, 20).hAlign(.leading).background{
             RoundedRectangle(cornerRadius: 12, style: .continuous).fill(tint.opacity(0.15)).background{
-                RoundedRectangle(cornerRadius: 12, style: .continuous).stroke(tint, lineWidth: 2)
+                RoundedRectangle(cornerRadius: 12, style: .continuous).stroke(tint.opacity(tint == .gray ? 0.15 : 1), lineWidth: 2)
             }
         }
     }
