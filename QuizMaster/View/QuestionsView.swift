@@ -41,8 +41,7 @@ struct QuestionsView: View {
             .padding (.top,5)
             
             // - Questions
-            GeometryReader{
-                let size = $0.size
+            GeometryReader{_ in
                 
                 ForEach(quizQuestions.indices, id: \.self) { index in
                     // Using transition for moving forth and between instead of using tabview
@@ -55,10 +54,12 @@ struct QuestionsView: View {
                     // Add other views or logic related to each element here
                 }
 
-            }.padding(.vertical, 15)
+            }.padding(.horizontal, -15).padding(.vertical, 15)
             
             CustomButton(title: "Next Question", onClick: {
-                
+                withAnimation(.easeInOut){
+                    currentIndex += 1
+                }
             })
             
         }
@@ -75,8 +76,36 @@ struct QuestionsView: View {
     // Question View
     @ViewBuilder
     func QuestionView(_ question: Question)-> some View{
-        RoundedRectangle(cornerRadius: 20, style: .continuous)
-            .fill(.white)
+//        RoundedRectangle(cornerRadius: 20, style: .continuous)
+//            .fill(.white).padding(.horizontal, 15)
+        
+        VStack(alignment: .leading, spacing: 15) {
+            Text("Question\(currentIndex + 1)/\(quizQuestions.count)")
+                .font(.callout)
+                .foregroundColor(.gray)
+                .hAlign(.leading)
+            Text (question.question)
+                .font (.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(.black)
+            VStack(spacing: 12){
+                ForEach(question.options,id: \.self) {option in
+                    OptionView(option, .gray)
+                }
+            }}.padding(15).hAlign(.center).background {
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(.white)
+            }.padding(.horizontal,15)
+    }
+    
+    // OptionView
+    @ViewBuilder
+    func OptionView(_ option: String, _ tint: Color)-> some View {
+        Text(option).foregroundColor(tint).padding(.horizontal, 15).padding(.vertical, 20).hAlign(.leading).background{
+            RoundedRectangle(cornerRadius: 12, style: .continuous).fill(tint.opacity(0.15)).background{
+                RoundedRectangle(cornerRadius: 12, style: .continuous).stroke(tint, lineWidth: 2)
+            }
+        }
     }
     
     
