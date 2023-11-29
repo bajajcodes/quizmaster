@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-struct Question: Codable{
+struct Question:  Identifiable, Codable{
     var id: UUID = .init();
     var question: String;
     var answer: String;
@@ -14,7 +14,7 @@ struct Question: Codable{
     
     var tappedAnswer: String  = "";
     
-    enum CondingKeys: CodingKey {
+    enum CodingKeys: CodingKey {
         case question
         case options
         case answer
