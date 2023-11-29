@@ -10,6 +10,7 @@ import FirebaseFirestoreSwift
 struct Home: View {
     @State private var quizInfo: Info?
     @State private var quizQuestions: [Question] = [];
+    @State private var startQuiz: Bool = false;
     @AppStorage("log_status") private var logStatus: Bool = false;
     
     var body: some View {
@@ -28,7 +29,14 @@ struct Home: View {
                     RulesView(info.rules)
                 }
                 
-            }.padding(15).vAlign(.top)
+                Button{
+                    startQuiz.toggle()
+                }label: {
+                    Text("Start Test").font(.title3).fontWeight(.semibold).hAlign(.center).padding(.top, 15).padding(.bottom, 10).foregroundColor(.white).background(Rectangle().fill(Color("OPink")).ignoresSafeArea())
+                }.padding([.bottom, .horizontal], -15)
+                .vAlign(.bottom)
+                
+            }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){}
         }else{
             VStack(spacing: 4){
                 ProgressView()
@@ -56,7 +64,7 @@ struct Home: View {
             
             ForEach(rules, id: \.self){rule in
                 HStack(alignment: .top, spacing: 10){
-                    Circle().fill(.black).frame(width: 8, height: 8)
+                    Circle().fill(.black).frame(width: 8, height: 8).offset(y: 6)
                     Text(rule).font(.callout).lineLimit(3)
                 }
             }
