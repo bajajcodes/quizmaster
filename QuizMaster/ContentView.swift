@@ -4,16 +4,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    
+    init(){
+        FirebaseApp.configure()
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Home().preferredColorScheme(.light)
     }
 }
 
