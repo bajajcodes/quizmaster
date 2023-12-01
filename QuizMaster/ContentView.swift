@@ -13,7 +13,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Home().preferredColorScheme(.light)
+        QuizInspirationCardView(quizInspiration: QuizInspiration.exampleCSharp() ).preferredColorScheme(.dark)
     }
 }
 
