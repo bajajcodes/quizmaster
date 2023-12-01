@@ -8,6 +8,8 @@ import SwiftUI
 //INFO: For Native SwiftUI Image Picker
 import PhotosUI
 import Firebase
+import FirebaseStorage
+import FirebaseFirestore
 
 struct LoginView: View {
     // MARK: user details
@@ -138,6 +140,11 @@ extension View {
                 .fill(color)
         }
     }
+    
+    // MARK: Disabling with Opactiy
+    func disableWithOpactiy(_ condition: Bool)-> some View {
+        self.disabled(condition).opacity(condition ? 0.6 : 1)
+    }
 }
 
 
@@ -151,6 +158,8 @@ struct SignupView: View {
     @State private var userProfilePicData: Data?;
     @State private var showImagePicker: Bool = false;
     @State private var photoItem: PhotosPickerItem?;
+    @State private var showError: Bool = false;
+    @State private var errorMessage: String = "";
     // MARK: View Propeties
     @Environment(\.dismiss) var dimiss
     
@@ -207,7 +216,12 @@ struct SignupView: View {
                 }
             }
         }
+        // MARK: display error
+        .alert(errorMessage, isPresented: $showError, actions: {
+            
+        })
     }
+    
     
     @ViewBuilder
     func HelperView() -> some View {
@@ -252,9 +266,7 @@ struct SignupView: View {
                 .border(1, .gray.opacity(0.5))
             
             
-            Button {
-                
-            } label:{
+            Button (action:singupUser){
                 // MARK: Login Button
                 Text("Sign up")
                     .foregroundColor(.white)
@@ -265,6 +277,44 @@ struct SignupView: View {
             
         }
 
+    }
+    
+    func singupUser(){
+        Task {
+            do{
+                // Step1: create firebase account
+                try await Auth.auth().createUser(withEmail: emailID, password: password)
+                // Step2: upload profile picutre into firebase storage
+                guard let userUID = Auth.auth().currentUser?.uid else {return}
+                guard let imageData = userProfilePicData else {return}
+                let storageRef = Storage.storage().reference().child("Profile_Images").child(userUID)
+                let _ = try await storageRef.putDataAsync(imageData)
+                // Step3: downloading photo url
+                let downloadUrl = try await storageRef.downloadURL()
+                // Step4: creating a user firestore object
+                let user = User(username: userName, userBio: userBio, userUID: userUID, userEmail: emailID, userProfileURL: downloadUrl)
+                // Step5: saving user doc into firestore database
+                try Firestore.firestore().collection("users").document(userUID).setData(from: user, completion: {
+                    error in
+                    if error == nil{
+                        // MARK: Print saved or created user succesfully
+                        print("User Created Succesfully")
+                    }
+                })
+            }catch{
+                await setError(error)
+            }
+        }
+    }
+    
+    // MARK: Diaply error via Alert
+    func setError(_ error: Error)async{
+        // MARK: UI must be updated on Main Thread
+        await MainActor.run(body: {
+            print(error)
+            errorMessage = error.localizedDescription;
+            showError.toggle()
+        })
     }
 
 }
