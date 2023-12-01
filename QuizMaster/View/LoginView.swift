@@ -48,9 +48,9 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .hAlign(.center)
                         .fillView(Color.black)
-                        
+                    
                 }.padding(.top, 10)
-                
+            }
                 HStack {
                     
                     Text("Don't have an account?")
@@ -65,7 +65,7 @@ struct LoginView: View {
                             .fontWeight(.bold)
                     }
                 }.vAlign(.bottom).font(.callout)
-            }
+            
             
         }
         .vAlign(.top)
@@ -106,6 +106,7 @@ struct SignupView: View {
     @State private var emailID: String = "";
     @State private var password: String  = "";
     @State private var userName: String = "";
+    @State private var userBio: String = "";
     // MARK: View Propeties
     @Environment(\.dismiss) var dimiss
     
@@ -119,33 +120,14 @@ struct SignupView: View {
                 .font(.title3)
                 .hAlign(.leading)
             
-            VStack(spacing: 12){
-                
-                TextField("UserName", text: $userName)
-                    .textContentType(.name)
-                    .border(1, .gray.opacity(0.5))
-                    .padding(.top, 25)
-                
-                TextField("Email", text: $emailID)
-                    .textContentType(.emailAddress)
-                    .border(1, .gray.opacity(0.5))
-
-                SecureField("Password", text: $password)
-                    .textContentType(.password)
-                    .border(1, .gray.opacity(0.5))
-                
-                
-                Button {
-                    
-                } label:{
-                    // MARK: Login Button
-                    Text("Sign up")
-                        .foregroundColor(.white)
-                        .hAlign(.center)
-                        .fillView(Color.black)
-                        
-                }.padding(.top, 10)
-                
+            // MARK: For Smaller Size Optimization
+            ViewThatFits {
+                ScrollView(.vertical, showsIndicators: false){
+                    HelperView()
+                }
+                HelperView()
+            }
+            
                 HStack {
                     
                     Text("Already have an account?")
@@ -160,8 +142,48 @@ struct SignupView: View {
                             .fontWeight(.bold)
                     }
                 }.vAlign(.bottom).font(.callout)
-            }
+            
             
         }.vAlign(.top).padding(15)
     }
+    
+    @ViewBuilder
+    func HelperView() -> some View {
+        VStack(spacing: 12){
+            
+            TextField("UserName", text: $userName)
+                .textContentType(.name)
+                .border(1, .gray.opacity(0.5))
+                .padding(.top, 25)
+            
+            TextField("Email", text: $emailID)
+                .textContentType(.emailAddress)
+                .border(1, .gray.opacity(0.5))
+            
+            TextField("About You", text: $userBio, axis: .vertical)
+                .frame(minHeight:100, alignment: .top)
+                .textContentType(.emailAddress)
+                .border(1, .gray.opacity(0.5))
+            
+            SecureField("Password", text: $password)
+                .textContentType(.password)
+                .border(1, .gray.opacity(0.5))
+            
+            
+            Button {
+                
+            } label:{
+                // MARK: Login Button
+                Text("Sign up")
+                    .foregroundColor(.white)
+                    .hAlign(.center)
+                    .fillView(Color.black)
+                
+            }.padding(.top, 10)
+            
+        }
+
+    }
+
 }
+
