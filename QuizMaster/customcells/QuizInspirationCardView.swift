@@ -19,6 +19,7 @@ struct QuizInspirationCardView: View {
             .overlay(alignment: .bottomTrailing, content: {
                 Text(quizInspiration.name)
                     .bold()
+                    .font(.title2)
                     .foregroundColor(Color.black)
                     .padding()
             })

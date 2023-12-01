@@ -8,6 +8,7 @@ import Firebase
 import FirebaseFirestoreSwift
 
 struct Home: View {
+    let quizInspiration: QuizInspiration
     @State private var quizInfo: Info?
     @State private var quizQuestions: [Question] = [];
     @State private var startQuiz: Bool = false;
@@ -35,10 +36,14 @@ struct Home: View {
                 }).vAlign(.bottom)
                 
             }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
-                QuestionsView(quizInfo: info, quizQuestions: quizQuestions){
+//                QuestionsView(quizInfo: info, quizQuestions: quizQuestions){
+//                    // user has succesfully finished the quiz thus update the BE and UI
+//                    quizInfo?.peopleAttended += 1
+//                }
+                QuestionsView(quizInfo: info, quizQuestions: quizQuestions, onFinish: {
                     // user has succesfully finished the quiz thus update the BE and UI
                     quizInfo?.peopleAttended += 1
-                }
+                })
             }
         }else{
             VStack(spacing: 4){
@@ -105,8 +110,8 @@ struct Home: View {
 
     func fetchData()async throws{
         try await logInUserAnonymous()
-        let info = try await Firestore.firestore().collection("Quiz").document("Info").getDocument().data(as: Info.self)
-        let questions = try await Firestore.firestore().collection("Quiz").document("Info").collection("Questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
+        let info = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).getDocument().data(as: Info.self)
+        let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).collection("Questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
         )}
         
         //UI must be updated on Main Thread
@@ -124,7 +129,7 @@ struct Home: View {
 }
 
 #Preview {
-    Home()
+    Home(quizInspiration: QuizInspiration.exampleSwiftUI())
 }
 
 // MARK: View Extensions
