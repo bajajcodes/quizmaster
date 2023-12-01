@@ -9,10 +9,13 @@ import FirebaseFirestoreSwift
 
 struct Home: View {
     let quizInspiration: QuizInspiration
+    
     @State private var quizInfo: Info?
     @State private var quizQuestions: [Question] = [];
     @State private var startQuiz: Bool = false;
     @AppStorage("log_status") private var logStatus: Bool = false;
+    @Environment(\.dismiss) private var dismiss
+
     
     var body: some View {
         if let info = quizInfo {
@@ -39,6 +42,7 @@ struct Home: View {
                 QuestionsView(quizInspiration: quizInspiration, quizInfo: info,quizQuestions: quizQuestions){
                     // user has succesfully finished the quiz thus update the BE and UI
                     quizInfo?.peopleAttended += 1
+                    dismiss()
                 }
             }
         }else{

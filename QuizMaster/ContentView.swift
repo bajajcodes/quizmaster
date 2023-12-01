@@ -9,7 +9,7 @@ import Firebase
 struct ContentView: View {
     
     @State private var quizInspirations = QuizInspiration.examples()
-    
+
     init(){
         FirebaseApp.configure()
     }

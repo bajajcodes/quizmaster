@@ -13,7 +13,7 @@ struct QuestionsView: View {
     var onFinish: ()->()
     
     @Environment(\.dismiss) private var dismiss
-
+    
     @State private var progress: CGFloat = 0
     @State private var currentIndex: Int = 0
     @State private var score: CGFloat = 0
@@ -185,8 +185,8 @@ struct ScoreCardView: View {
             CustomButton(title: "Back To Home", onClick: {
                 Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
-                onDismiss()
                 dismiss()
+                onDismiss()
             })
         }.padding(15).background {
             Color("BG").ignoresSafeArea()
