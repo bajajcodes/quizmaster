@@ -10,6 +10,8 @@ struct LoginView: View {
     // MARK: user details
     @State private var emailID: String = "";
     @State private var password: String  = "";
+    // MARK: View Propeties
+    @State private var createAccount: Bool = false;
     
     var body: some View {
         VStack(){
@@ -56,7 +58,7 @@ struct LoginView: View {
                     
                     // MARK: Register Button
                     Button{
-                        
+                        createAccount.toggle()
                     } label:{
                         Text("Register Now")
                             .foregroundColor(.black)
@@ -65,7 +67,13 @@ struct LoginView: View {
                 }.vAlign(.bottom).font(.callout)
             }
             
-        }.vAlign(.top).padding(15)
+        }
+        .vAlign(.top)
+        .padding(15)
+        // MARK: Register View VIA Sheets
+        .fullScreenCover(isPresented: $createAccount){
+            SignupView()
+        }
     }
 }
 
@@ -88,5 +96,72 @@ extension View {
             RoundedRectangle(cornerRadius: 5, style: .continuous)
                 .fill(color)
         }
+    }
+}
+
+
+// MARK: Signup View
+struct SignupView: View {
+    // MARK: user details
+    @State private var emailID: String = "";
+    @State private var password: String  = "";
+    @State private var userName: String = "";
+    // MARK: View Propeties
+    @Environment(\.dismiss) var dimiss
+    
+    var body: some View {
+        VStack(){
+            Text("Let's Register\nAccount")
+                .font(.largeTitle.bold())
+                .hAlign(.leading)
+            
+            Text("Hello User,\nHave a wondeful journey")
+                .font(.title3)
+                .hAlign(.leading)
+            
+            VStack(spacing: 12){
+                
+                TextField("UserName", text: $userName)
+                    .textContentType(.name)
+                    .border(1, .gray.opacity(0.5))
+                    .padding(.top, 25)
+                
+                TextField("Email", text: $emailID)
+                    .textContentType(.emailAddress)
+                    .border(1, .gray.opacity(0.5))
+
+                SecureField("Password", text: $password)
+                    .textContentType(.password)
+                    .border(1, .gray.opacity(0.5))
+                
+                
+                Button {
+                    
+                } label:{
+                    // MARK: Login Button
+                    Text("Sign up")
+                        .foregroundColor(.white)
+                        .hAlign(.center)
+                        .fillView(Color.black)
+                        
+                }.padding(.top, 10)
+                
+                HStack {
+                    
+                    Text("Already have an account?")
+                        .foregroundColor(.gray)
+                    
+                    // MARK: Register Button
+                    Button{
+                        dimiss()
+                    } label:{
+                        Text("Login Now")
+                            .foregroundColor(.black)
+                            .fontWeight(.bold)
+                    }
+                }.vAlign(.bottom).font(.callout)
+            }
+            
+        }.vAlign(.top).padding(15)
     }
 }
