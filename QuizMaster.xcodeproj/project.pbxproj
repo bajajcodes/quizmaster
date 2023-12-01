@@ -10,6 +10,7 @@
 		8B38D9202B178739009B0F2A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38D91F2B178739009B0F2A /* QuestionsView.swift */; };
 		8B5FD4792B19D45000FA6A8D /* QuizInspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FD4782B19D45000FA6A8D /* QuizInspiration.swift */; };
 		8B5FD47C2B19D64400FA6A8D /* QuizInspirationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FD47B2B19D64400FA6A8D /* QuizInspirationCardView.swift */; };
+		8B5FD47E2B1A310100FA6A8D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FD47D2B1A310100FA6A8D /* LoginView.swift */; };
 		8B622D092B1731CE009E00A2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8B622D082B1731CE009E00A2 /* FirebaseAnalytics */; };
 		8B622D0B2B1731CE009E00A2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8B622D0A2B1731CE009E00A2 /* FirebaseAnalyticsOnDeviceConversion */; };
 		8B622D0D2B1731CE009E00A2 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8B622D0C2B1731CE009E00A2 /* FirebaseAnalyticsSwift */; };
@@ -35,6 +36,7 @@
 		8B38D91F2B178739009B0F2A /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		8B5FD4782B19D45000FA6A8D /* QuizInspiration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInspiration.swift; sourceTree = "<group>"; };
 		8B5FD47B2B19D64400FA6A8D /* QuizInspirationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInspirationCardView.swift; sourceTree = "<group>"; };
+		8B5FD47D2B1A310100FA6A8D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8BD4D2F02B17194A00C34089 /* QuizMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD4D2F32B17194A00C34089 /* QuizMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMasterApp.swift; sourceTree = "<group>"; };
 		8BD4D2F52B17194A00C34089 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				8BD4D30D2B172A9200C34089 /* Home.swift */,
 				8B38D91F2B178739009B0F2A /* QuestionsView.swift */,
+				8B5FD47D2B1A310100FA6A8D /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				8B5FD4792B19D45000FA6A8D /* QuizInspiration.swift in Sources */,
 				8BD4D3122B172B8200C34089 /* Question.swift in Sources */,
 				8BD4D2F62B17194A00C34089 /* ContentView.swift in Sources */,
+				8B5FD47E2B1A310100FA6A8D /* LoginView.swift in Sources */,
 				8B38D9202B178739009B0F2A /* QuestionsView.swift in Sources */,
 				8BD4D3102B172AD300C34089 /* Info.swift in Sources */,
 				8BD4D30E2B172A9200C34089 /* Home.swift in Sources */,
