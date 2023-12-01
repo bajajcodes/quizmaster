@@ -107,6 +107,7 @@ struct SignupView: View {
     @State private var password: String  = "";
     @State private var userName: String = "";
     @State private var userBio: String = "";
+    @State private var userProfilePicData: Data?;
     // MARK: View Propeties
     @Environment(\.dismiss) var dimiss
     
@@ -151,10 +152,27 @@ struct SignupView: View {
     func HelperView() -> some View {
         VStack(spacing: 12){
             
+            ZStack{
+                if let userProfilePicData, let image = UIImage(data: userProfilePicData){
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+
+                }else{
+                    Image("NullProfile")
+                        .resizable()
+                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                }
+            }
+            .frame(width: 85, height: 85)
+            .clipShape(Circle())
+            .contentShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            .padding(.top, 25)
+
+            
             TextField("UserName", text: $userName)
                 .textContentType(.name)
                 .border(1, .gray.opacity(0.5))
-                .padding(.top, 25)
             
             TextField("Email", text: $emailID)
                 .textContentType(.emailAddress)
