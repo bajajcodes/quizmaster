@@ -68,14 +68,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B5FD4772B19D43F00FA6A8D /* data */ = {
-			isa = PBXGroup;
-			children = (
-				8B5FD4782B19D45000FA6A8D /* QuizInspiration.swift */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
 		8B5FD47A2B19D62700FA6A8D /* customcells */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				8B5FD47A2B19D62700FA6A8D /* customcells */,
-				8B5FD4772B19D43F00FA6A8D /* data */,
 				8BD4D30C2B17297500C34089 /* Controller */,
 				8BD4D30B2B17296D00C34089 /* Model */,
 				8BD4D30A2B17296600C34089 /* View */,
@@ -138,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD4D30F2B172AD300C34089 /* Info.swift */,
+				8B5FD4782B19D45000FA6A8D /* QuizInspiration.swift */,
 				8BD4D3112B172B8200C34089 /* Question.swift */,
 			);
 			path = Model;

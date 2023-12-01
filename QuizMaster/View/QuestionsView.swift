@@ -7,12 +7,13 @@ import SwiftUI
 import FirebaseFirestore
 
 struct QuestionsView: View {
+    let quizInspiration: QuizInspiration
     var quizInfo: Info
     @State var quizQuestions: [Question];
     var onFinish: ()->()
     
     @Environment(\.dismiss) private var dismiss
-
+    
     @State private var progress: CGFloat = 0
     @State private var currentIndex: Int = 0
     @State private var score: CGFloat = 0
@@ -86,7 +87,7 @@ struct QuestionsView: View {
         .environment(\.colorScheme, .dark)
         .fullScreenCover(isPresented: $showScoreCardView) {
             // display score in 100%
-            ScoreCardView(score: score / CGFloat(quizQuestions.count) * 100){
+            ScoreCardView(score: score / CGFloat(quizQuestions.count) * 100, quizInspiration: quizInspiration){
                 dismiss()
                 onFinish()
             }
@@ -153,6 +154,7 @@ struct QuestionsView: View {
 // MARK: Score Card View
 struct ScoreCardView: View {
     var score: CGFloat
+    let quizInspiration: QuizInspiration
     // move to home screen
     var onDismiss: ()->()
     @Environment(\.dismiss) private var dismiss
@@ -181,10 +183,10 @@ struct ScoreCardView: View {
             }.vAlign(.center)
             
             CustomButton(title: "Back To Home", onClick: {
-                Firestore.firestore().collection("Quiz").document("Info").updateData([
+                Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
-                onDismiss()
                 dismiss()
+                onDismiss()
             })
         }.padding(15).background {
             Color("BG").ignoresSafeArea()
