@@ -7,6 +7,7 @@
 import SwiftUI
 //INFO: For Native SwiftUI Image Picker
 import PhotosUI
+import Firebase
 
 struct LoginView: View {
     // MARK: user details
@@ -14,6 +15,8 @@ struct LoginView: View {
     @State private var password: String  = "";
     // MARK: View Propeties
     @State private var createAccount: Bool = false;
+    @State private var showError: Bool = false;
+    @State private var errorMessage: String = "";
     
     var body: some View {
         VStack(){
@@ -36,15 +39,13 @@ struct LoginView: View {
                     .border(1, .gray.opacity(0.5))
                     .padding(.top, 25)
                 
-                Button("Reset Password?", action: {})
+                Button("Reset Password?", action: resetPassword)
                     .font(.callout)
                     .tint(.black)
                     .hAlign(.trailing)
                     .fontWeight(.medium)
                 
-                Button {
-                    
-                } label:{
+                Button(action: loginUser){
                     // MARK: Login Button
                     Text("Sign in")
                         .foregroundColor(.white)
@@ -76,6 +77,44 @@ struct LoginView: View {
         .fullScreenCover(isPresented: $createAccount){
             SignupView()
         }
+        // MARK: display error
+        .alert(errorMessage, isPresented: $showError, actions: {
+            
+        })
+    }
+    
+    func loginUser(){
+        Task{
+            do{
+               // By the help of Swift Concurrency Auth is done with single line
+                try await Auth.auth().signIn(withEmail: emailID, password: password)
+                print("User Signed In")
+            }catch{
+                await setError(error)
+            }
+        }
+    }
+    
+    func resetPassword(){
+        Task{
+            do{
+               // By the help of Swift Concurrency Auth is done with single line
+                try await Auth.auth().sendPasswordReset(withEmail: emailID)
+                print("Password Reset Link Sent")
+            }catch{
+                await setError(error)
+            }
+        }
+    }
+    
+    // MARK: Diaply error via Alert
+    func setError(_ error: Error)async{
+        // MARK: UI must be updated on Main Thread
+        await MainActor.run(body: {
+            print(error)
+            errorMessage = error.localizedDescription;
+            showError.toggle()
+        })
     }
 }
 
@@ -153,6 +192,7 @@ struct SignupView: View {
         .vAlign(.top)
         .padding(15)
         .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
+        // TODO: Refactor the Depracated Handler
         .onChange(of: photoItem){newValue in
             // MARK: Extracting UI Image From PhotoImage
             if let newValue{

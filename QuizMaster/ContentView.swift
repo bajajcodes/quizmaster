@@ -8,13 +8,24 @@ import Firebase
 
 struct ContentView: View {
     
-    @State private var quizInspirations = QuizInspiration.examples()
 
     init(){
         FirebaseApp.configure()
     }
     
     var body: some View {
+        LoginView()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+struct ExploreQuizes: View {
+    let quizInspirations = QuizInspiration.examples()
+
+    var body: some View{
         NavigationView{
             ScrollView{
                 LazyVStack(spacing: 10){
@@ -29,8 +40,4 @@ struct ContentView: View {
             .navigationTitle("Quiz Inspirations")
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
