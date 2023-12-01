@@ -5,6 +5,8 @@
 
 
 import SwiftUI
+//INFO: For Native SwiftUI Image Picker
+import PhotosUI
 
 struct LoginView: View {
     // MARK: user details
@@ -108,6 +110,8 @@ struct SignupView: View {
     @State private var userName: String = "";
     @State private var userBio: String = "";
     @State private var userProfilePicData: Data?;
+    @State private var showImagePicker: Bool = false;
+    @State private var photoItem: PhotosPickerItem?;
     // MARK: View Propeties
     @Environment(\.dismiss) var dimiss
     
@@ -145,7 +149,24 @@ struct SignupView: View {
                 }.vAlign(.bottom).font(.callout)
             
             
-        }.vAlign(.top).padding(15)
+        }
+        .vAlign(.top)
+        .padding(15)
+        .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
+        .onChange(of: photoItem){newValue in
+            // MARK: Extracting UI Image From PhotoImage
+            if let newValue{
+                Task{
+                    do{
+                        guard let imageData = try await newValue.loadTransferable(type: Data.self) else {return}
+                        // MARK: UI Must be updated on Main Thread
+                        await MainActor.run(body: {
+                            userProfilePicData = imageData
+                        })
+                    }catch{}
+                }
+            }
+        }
     }
     
     @ViewBuilder
@@ -168,6 +189,9 @@ struct SignupView: View {
             .clipShape(Circle())
             .contentShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .padding(.top, 25)
+            .onTapGesture {
+                showImagePicker.toggle()
+            }
 
             
             TextField("UserName", text: $userName)
