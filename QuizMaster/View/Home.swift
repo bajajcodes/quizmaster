@@ -36,14 +36,10 @@ struct Home: View {
                 }).vAlign(.bottom)
                 
             }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
-//                QuestionsView(quizInfo: info, quizQuestions: quizQuestions){
-//                    // user has succesfully finished the quiz thus update the BE and UI
-//                    quizInfo?.peopleAttended += 1
-//                }
-                QuestionsView(quizInfo: info, quizQuestions: quizQuestions, onFinish: {
+                QuestionsView(quizInspiration: quizInspiration, quizInfo: info,quizQuestions: quizQuestions){
                     // user has succesfully finished the quiz thus update the BE and UI
                     quizInfo?.peopleAttended += 1
-                })
+                }
             }
         }else{
             VStack(spacing: 4){
@@ -111,7 +107,7 @@ struct Home: View {
     func fetchData()async throws{
         try await logInUserAnonymous()
         let info = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).getDocument().data(as: Info.self)
-        let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).collection("Questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
+        let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).collection("questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
         )}
         
         //UI must be updated on Main Thread
