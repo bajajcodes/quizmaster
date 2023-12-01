@@ -28,6 +28,8 @@
 		8BD4D3122B172B8200C34089 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD4D3112B172B8200C34089 /* Question.swift */; };
 		8BDEE8692B1A5DD400C21112 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8BDEE8682B1A5DD400C21112 /* FirebaseStorage */; };
 		8BDEE86B2B1A611A00C21112 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEE86A2B1A611A00C21112 /* UserModel.swift */; };
+		8BDEE86D2B1A6BA800C21112 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEE86C2B1A6BA800C21112 /* LoadingView.swift */; };
+		8BDEE86F2B1A6C0300C21112 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEE86E2B1A6C0300C21112 /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		8BD4D30F2B172AD300C34089 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		8BD4D3112B172B8200C34089 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8BDEE86A2B1A611A00C21112 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8BDEE86C2B1A6BA800C21112 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8BDEE86E2B1A6C0300C21112 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				8BD4D30D2B172A9200C34089 /* Home.swift */,
 				8B38D91F2B178739009B0F2A /* QuestionsView.swift */,
 				8B5FD47D2B1A310100FA6A8D /* LoginView.swift */,
+				8BDEE86C2B1A6BA800C21112 /* LoadingView.swift */,
+				8BDEE86E2B1A6C0300C21112 /* SignupView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDEE86F2B1A6C0300C21112 /* SignupView.swift in Sources */,
 				8B5FD4792B19D45000FA6A8D /* QuizInspiration.swift in Sources */,
 				8BD4D3122B172B8200C34089 /* Question.swift in Sources */,
 				8BD4D2F62B17194A00C34089 /* ContentView.swift in Sources */,
+				8BDEE86D2B1A6BA800C21112 /* LoadingView.swift in Sources */,
 				8B5FD47E2B1A310100FA6A8D /* LoginView.swift in Sources */,
 				8B38D9202B178739009B0F2A /* QuestionsView.swift in Sources */,
 				8BD4D3102B172AD300C34089 /* Info.swift in Sources */,

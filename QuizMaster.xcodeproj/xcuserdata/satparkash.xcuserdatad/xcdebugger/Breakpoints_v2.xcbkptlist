@@ -202,10 +202,2132 @@
             filePath = "QuizMaster/View/LoginView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "border(_:_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB463BD7-C23F-4A76-8835-D618D8C7BDF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "LoginView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87FB09DE-5516-402D-9CDD-AEB3BC894A45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/SignupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "87FB09DE-5516-402D-9CDD-AEB3BC894A45 - c7875e69e242adea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "87FB09DE-5516-402D-9CDD-AEB3BC894A45 - c7875e69e242adc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "87FB09DE-5516-402D-9CDD-AEB3BC894A45 - aa2f3e7e606a4d37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "87FB09DE-5516-402D-9CDD-AEB3BC894A45 - c83c8f79870e2a3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F121A619-E5E4-4C34-AB21-C86DB258E1A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/SignupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "F121A619-E5E4-4C34-AB21-C86DB258E1A3 - a446ef0f7f45c9ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "852">
+               </Location>
+               <Location
+                  uuid = "F121A619-E5E4-4C34-AB21-C86DB258E1A3 - a446ef0f7f45c9ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "548">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EF533C7-CC5C-4690-8E1F-012A2D862B7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/SignupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "6EF533C7-CC5C-4690-8E1F-012A2D862B7F - a446ef0f7f45c9cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "181"
+                  endingLineNumber = "181"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "6EF533C7-CC5C-4690-8E1F-012A2D862B7F - a446ef0f7f45c9cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "181"
+                  endingLineNumber = "181"
+                  offsetFromSymbolStart = "852">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BE32E45-9EAC-4D11-8B8A-69EDD84BDBE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/SignupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "6BE32E45-9EAC-4D11-8B8A-69EDD84BDBE0 - a446ef0f7f45c9b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "6BE32E45-9EAC-4D11-8B8A-69EDD84BDBE0 - a446ef0f7f45c9b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "952">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5704683-9AE6-42CD-B49D-0C7D03A8097D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/SignupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "B5704683-9AE6-42CD-B49D-0C7D03A8097D - a446ef0f7f45c993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+               <Location
+                  uuid = "B5704683-9AE6-42CD-B49D-0C7D03A8097D - a446ef0f7f45c993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/SignupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "996">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - eed1930bb5a890ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - 90573b3075131dd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - edeee7e75f926ccc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - a1b09f50a3dc8da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - edeee7e75f926ccc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - eb498dbf045ce4c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - ff9309b42a1628d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "B4C89B0E-6C58-43CD-B90B-074A6C9A0868 - e767a1951484bd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D82BF739-EC2D-4CFA-A1D5-E282239694F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D82BF739-EC2D-4CFA-A1D5-E282239694F6 - edeee7e75f926c8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "D82BF739-EC2D-4CFA-A1D5-E282239694F6 - eb498dbf045ce48a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "D82BF739-EC2D-4CFA-A1D5-E282239694F6 - ff9309b42a162895"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "D82BF739-EC2D-4CFA-A1D5-E282239694F6 - e767a1951484b94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "D82BF739-EC2D-4CFA-A1D5-E282239694F6 - edeee7e75f926ced"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "301"
+                  endingLineNumber = "301"
+                  offsetFromSymbolStart = "468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CB2BD11-43E0-4960-93E3-F6E48197109F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CB2BD11-43E0-4960-93E3-F6E48197109F - edeee7e75f926c8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "1CB2BD11-43E0-4960-93E3-F6E48197109F - eb498dbf045ce48a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "1CB2BD11-43E0-4960-93E3-F6E48197109F - ff9309b42a162895"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "1CB2BD11-43E0-4960-93E3-F6E48197109F - e767a1951484b94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "1CB2BD11-43E0-4960-93E3-F6E48197109F - edeee7e75f926c8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "784">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373 - edeee7e75f926caf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "303"
+                  endingLineNumber = "303"
+                  offsetFromSymbolStart = "468">
+               </Location>
+               <Location
+                  uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373 - edeee7e75f926caf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "303"
+                  endingLineNumber = "303"
+                  offsetFromSymbolStart = "1016">
+               </Location>
+               <Location
+                  uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373 - 3e7cd32dfff4d9b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "303"
+                  endingLineNumber = "303"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373 - ec3b3ac3627b28a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "303"
+                  endingLineNumber = "303"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373 - ff9309b42a1628d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F870B94B-F8BF-4F1D-8F3A-811B15D75373 - ff9309b42a1628b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "303"
+                  endingLineNumber = "303"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - eed1930bb5a890ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - 90573b3075131dd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - edeee7e75f926ccc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - a1b09f50a3dc8da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - eed1930bb5a89f00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "298"
+                  endingLineNumber = "298"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - 90573b307513121d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "298"
+                  endingLineNumber = "298"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - edeee7e75f926302"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "298"
+                  endingLineNumber = "298"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "EC857977-3447-426D-ABCC-C604E9FA2A0C - a1b09f50a3dc8266"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "298"
+                  endingLineNumber = "298"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - edeee7e75f926c69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "1016">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - 3e7cd32dfff4d974"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - ec3b3ac3627b286f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - ff9309b42a162895"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - ff9309b42a162872"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - ec3b3ac3627b286f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - dc606b4961dd957a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - eb498dbf045ce4c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - eb498dbf045ce46d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - e767a1951484bd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F7329F80-2711-49D1-927E-2935DC0FF0B1 - e767a1951484b73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88159432-05D9-49DC-A560-59DC9454717A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - ec3b3ac3627b282d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - dc606b4961dd9538"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - eb498dbf045ce48a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - eb498dbf045ce42f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - e767a1951484b94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - e767a1951484b31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "88159432-05D9-49DC-A560-59DC9454717A - eb498dbf045ce42f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C67FE04C-AF5E-4169-AD95-0B86981A7F54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C67FE04C-AF5E-4169-AD95-0B86981A7F54 - eb498dbf045ce5f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "309"
+                  endingLineNumber = "309"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "C67FE04C-AF5E-4169-AD95-0B86981A7F54 - eb498dbf045ce5f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "309"
+                  endingLineNumber = "309"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "C67FE04C-AF5E-4169-AD95-0B86981A7F54 - 82abf37d4de37511"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52815446-FFFE-4C38-AA0C-B42063202AB8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52815446-FFFE-4C38-AA0C-B42063202AB8 - eb498dbf045ce5b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "52815446-FFFE-4C38-AA0C-B42063202AB8 - 82abf37d4de375d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "52815446-FFFE-4C38-AA0C-B42063202AB8 - 82abf37d4de37511"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40D13EBD-FA2B-4A69-ABA5-D7B1EF0054EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "40D13EBD-FA2B-4A69-ABA5-D7B1EF0054EB - eb498dbf045ce5b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "40D13EBD-FA2B-4A69-ABA5-D7B1EF0054EB - 82abf37d4de375d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "40D13EBD-FA2B-4A69-ABA5-D7B1EF0054EB - 82abf37d4de37511"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2B8948A-ACAF-400D-B99B-81BF9328D86A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F2B8948A-ACAF-400D-B99B-81BF9328D86A - 82abf37d4de375d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "F2B8948A-ACAF-400D-B99B-81BF9328D86A - 82abf37d4de375d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2E3724D-84E3-451E-812D-B6FF31021C2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2E3724D-84E3-451E-812D-B6FF31021C2D - 82abf37d4de376fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "320"
+                  endingLineNumber = "320"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "C2E3724D-84E3-451E-812D-B6FF31021C2D - eb498dbf045ce65c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "320"
+                  endingLineNumber = "320"
+                  offsetFromSymbolStart = "1432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - eb498dbf045ce61e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "1432">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - eb498dbf045ce61e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "1808">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - 7995036aeb87530b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - ea66e09b2e05a220"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - a1b09f50a3dc8f7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - ff9309b42a162a01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - e767a1951484900"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "4DE93DC4-C164-46B4-908D-68FCA1D5F7EC - 5c4ae462df81e403"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(15) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - eb498dbf045ce63f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "1536">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - 93dc2ecf356b505e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - a1b09f50a3dc8f5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - ff9309b42a162a20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - e767a1951484921"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - eb498dbf045ce63f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "2136">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - ea66e09b2e05a201"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - a1b09f50a3dc8f5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "644">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - ff9309b42a162a20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "92D33E06-F3CB-41BA-B41B-53824A575D8E - e767a1951484921"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "323"
+                  endingLineNumber = "323"
+                  offsetFromSymbolStart = "688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "935FA818-941F-4E2C-BEAA-C9576149D521"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "singupUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - eb498dbf045ce7e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "1808">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - 7995036aeb8752f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - ea66e09b2e05a3de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - a1b09f50a3dc8e80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - ff9309b42a162bff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - e767a19514848fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - 5c4ae462df81e5fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(15) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - eb498dbf045ce7e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "2168">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - ea66e09b2e05a3de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - d1da62eadf7617ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) await resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - 93dc2ecf356b5181"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - a1b09f50a3dc8e80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "676">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - ff9309b42a162bff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  uuid = "935FA818-941F-4E2C-BEAA-C9576149D521 - e767a19514848fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in QuizMaster.SignupView.singupUser() -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "720">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "613029B6-04FF-4FE1-805B-E3B81CC4D6C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "setError(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "613029B6-04FF-4FE1-805B-E3B81CC4D6C8 - 45f7bda531ef9803"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "613029B6-04FF-4FE1-805B-E3B81CC4D6C8 - 8486eb28420895fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "613029B6-04FF-4FE1-805B-E3B81CC4D6C8 - 4805ea6c269b5e0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "613029B6-04FF-4FE1-805B-E3B81CC4D6C8 - fd0c5daad0188db0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "613029B6-04FF-4FE1-805B-E3B81CC4D6C8 - fd0c5daad0188d72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "333"
+                  endingLineNumber = "333"
+                  offsetFromSymbolStart = "392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CDC2493-005F-4086-BA71-0D4A9F48D24D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "setError(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CDC2493-005F-4086-BA71-0D4A9F48D24D - fd0c5daad0188db0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "1CDC2493-005F-4086-BA71-0D4A9F48D24D - fd0c5daad0188db0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in QuizMaster.SignupView.setError(Swift.Error) async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "1060">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

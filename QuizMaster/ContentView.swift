@@ -8,13 +8,16 @@ import Firebase
 
 struct ContentView: View {
     
+//    @AppStorage("log_status") var logStatus: Bool = false;
 
     init(){
         FirebaseApp.configure()
     }
     
     var body: some View {
+        // MARK: redirecting user based on log_status
         LoginView()
+        
     }
 }
 

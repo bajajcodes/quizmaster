@@ -3,7 +3,6 @@
 //  QuizMaster
 //
 
-
 import SwiftUI
 //INFO: For Native SwiftUI Image Picker
 import PhotosUI
@@ -54,7 +53,7 @@ struct LoginView: View {
                         .hAlign(.center)
                         .fillView(Color.black)
                     
-                }.padding(.top, 10)
+                }.padding(.top, 10).disableWithOpactiy(emailID == "" || password == "")
             }
                 HStack {
                     
@@ -148,6 +147,7 @@ extension View {
 }
 
 
+
 // MARK: Signup View
 struct SignupView: View {
     // MARK: user details
@@ -160,8 +160,14 @@ struct SignupView: View {
     @State private var photoItem: PhotosPickerItem?;
     @State private var showError: Bool = false;
     @State private var errorMessage: String = "";
+//    @State private var isLoading: Bool = false;
     // MARK: View Propeties
-    @Environment(\.dismiss) var dimiss
+    @Environment(\.dismiss) var dismiss
+    // MARK: User Defaults
+//    @AppStorage("log_status") var logStatus: Bool = false;
+//    @AppStorage("user_profile_url") var profileUrl: URL?;
+//    @AppStorage("user_name") var userNameStored: String = "";
+//    @AppStorage("user_UID") var userUID: String = "";
     
     var body: some View {
         VStack(){
@@ -188,18 +194,22 @@ struct SignupView: View {
                     
                     // MARK: Register Button
                     Button{
-                        dimiss()
+                        dismiss()
                     } label:{
                         Text("Login Now")
                             .foregroundColor(.black)
                             .fontWeight(.bold)
                     }
+
                 }.vAlign(.bottom).font(.callout)
             
             
         }
         .vAlign(.top)
         .padding(15)
+//        .overlay(content: {
+//            LoadingView(show: $isLoading)
+//        })
         .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
         // TODO: Refactor the Depracated Handler
         .onChange(of: photoItem){newValue in
@@ -217,9 +227,7 @@ struct SignupView: View {
             }
         }
         // MARK: display error
-        .alert(errorMessage, isPresented: $showError, actions: {
-            
-        })
+        .alert(errorMessage, isPresented: $showError, actions: {})
     }
     
     
@@ -273,15 +281,19 @@ struct SignupView: View {
                     .hAlign(.center)
                     .fillView(Color.black)
                 
-            }.padding(.top, 10)
+            }
+            .padding(.top, 10)
+            .disableWithOpactiy(userName == "" || userBio == "" || emailID == "" || password == "" || userProfilePicData == nil)
             
         }
 
     }
     
     func singupUser(){
+        print("inside signup user")
         Task {
             do{
+//                isLoading = true
                 // Step1: create firebase account
                 try await Auth.auth().createUser(withEmail: emailID, password: password)
                 // Step2: upload profile picutre into firebase storage
@@ -299,9 +311,16 @@ struct SignupView: View {
                     if error == nil{
                         // MARK: Print saved or created user succesfully
                         print("User Created Succesfully")
+//                        userNameStored = userName
+//                        profileUrl = downloadUrl
+//                        self.userUID = userUID
+//                        logStatus = true
                     }
                 })
+                print("finsihed signup user")
             }catch{
+                try await Auth.auth().currentUser?.delete()
+                print(error)
                 await setError(error)
             }
         }
@@ -314,8 +333,8 @@ struct SignupView: View {
             print(error)
             errorMessage = error.localizedDescription;
             showError.toggle()
+//            isLoading = false
         })
     }
 
 }
-
