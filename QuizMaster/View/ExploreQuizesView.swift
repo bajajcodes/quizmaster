@@ -2,14 +2,27 @@
 //  ExploreQuizesView.swift
 //  QuizMaster
 //
-//  Created by Shubham Bajaj on 02/12/23.
-//
+
 
 import SwiftUI
 
 struct ExploreQuizesView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    let quizInspirations = QuizInspiration.examples()
+
+    var body: some View{
+        NavigationView{
+            ScrollView{
+                LazyVStack(spacing: 10){
+                    ForEach(quizInspirations){quizInspiration in
+                        NavigationLink(destination: Home(quizInspiration: quizInspiration)){
+                            QuizInspirationCardView(quizInspiration: quizInspiration)
+                            .frame(height: 150)
+                        }
+                    }
+                }.padding()
+            }
+            .navigationTitle("Quiz Inspirations")
+        }
     }
 }
 
