@@ -155,6 +155,7 @@ struct SignupView: View {
     
     func singupUser(){
                         isLoading = true
+        closeAllKeyboard()
         Task {
             do{
                 // Step1: create firebase account

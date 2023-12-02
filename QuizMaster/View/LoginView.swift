@@ -15,6 +15,11 @@ struct LoginView: View {
     @State private var showError: Bool = false;
     @State private var errorMessage: String = "";
     @State var isLoading: Bool = false;
+    // MARK: User Defaults
+    @AppStorage("log_status") var logStatus: Bool = false;
+    @AppStorage("user_profile_url") var profileUrl: URL?;
+    @AppStorage("user_name") var userNameStored: String = "";
+    @AppStorage("user_UID") var userUID: String = "";
 
     
     var body: some View {
@@ -87,15 +92,32 @@ struct LoginView: View {
     
     func loginUser(){
         isLoading = true
+        closeAllKeyboard()
         Task{
             do{
                // By the help of Swift Concurrency Auth is done with single line
                 try await Auth.auth().signIn(withEmail: emailID, password: password)
-                print("User Signed In")
+                print("User Found")
+                try await fetchUser()
             }catch{
                 await setError(error)
             }
         }
+    }
+    
+    // MARK: Fetch user details from firestore
+    func fetchUser()async throws{
+            guard let userID = Auth.auth().currentUser?.uid else {return}
+        let user = try await Firestore.firestore().collection("users").document(userID).getDocument(as: User.self)
+                    // MARK: UI Updating Must be Run on Main Thread
+                    await MainActor.run(body: {
+                        // Setting user default's data and changing app auth-status
+                        userNameStored =  user.userEmail
+                        profileUrl = user.userProfileURL
+                        print(user,  "user details")
+                        self.userUID = userUID
+                        logStatus = true
+                    })
     }
     
     func resetPassword(){
@@ -146,6 +168,11 @@ extension View {
     // MARK: Disabling with Opactiy
     func disableWithOpactiy(_ condition: Bool)-> some View {
         self.disabled(condition).opacity(condition ? 0.6 : 1)
+    }
+    
+    // MARK: Close All Active Keyboards
+    func closeAllKeyboard(){
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
