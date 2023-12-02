@@ -7,7 +7,20 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // MARK: TabView with quizes and profile tab
+        TabView{
+            ExploreQuizesView()
+                .tabItem{
+                    Image(systemName: "rectangle.portrait.on.rectangle.portrait.angled")
+                    Text("All Quiz")
+                }
+            
+            ProfileView()
+                .tabItem{
+                    Image(systemName: "gear")
+                    Text("Profile")
+                }
+        }.tint(.black)
     }
 }
 

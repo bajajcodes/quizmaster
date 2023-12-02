@@ -21,7 +21,7 @@ struct ExploreQuizesView: View {
                     }
                 }.padding()
             }
-            .navigationTitle("Quiz Inspirations")
+            .navigationTitle("All Quiz")
         }
     }
 }
