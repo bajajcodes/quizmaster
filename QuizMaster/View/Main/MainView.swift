@@ -20,7 +20,7 @@ struct MainView: View {
                     Image(systemName: "gear")
                     Text("Profile")
                 }
-        }
+        }.tint(.black)
     }
 }
 
