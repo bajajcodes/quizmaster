@@ -8,29 +8,25 @@ import Firebase
 
 struct ContentView: View {
     
-    @State private var quizInspirations = QuizInspiration.examples()
+    @AppStorage("log_status") var logStatus: Bool = false;
 
     init(){
         FirebaseApp.configure()
     }
     
     var body: some View {
-        NavigationView{
-            ScrollView{
-                LazyVStack(spacing: 10){
-                    ForEach(quizInspirations){quizInspiration in
-                        NavigationLink(destination: Home(quizInspiration: quizInspiration)){
-                            QuizInspirationCardView(quizInspiration: quizInspiration)
-                            .frame(height: 150)
-                        }
-                    }
-                }.padding()
-            }
-            .navigationTitle("Quiz Inspirations")
+        // MARK: redirecting user based on log_status
+        if logStatus {
+            Text("Logged in")
+        }else{
+            LoginView()
         }
+        
+        
     }
 }
 
 #Preview {
     ContentView()
 }
+
