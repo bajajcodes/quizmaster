@@ -21,7 +21,9 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack{
             ScrollView(.vertical, showsIndicators: false) {
-                
+                if let myProfile {
+                    Text(myProfile.username)
+                }
             }
             .refreshable {
                 // MARK: Refresh User Data
@@ -50,7 +52,23 @@ struct ProfileView: View {
         // MARK: display error
         .alert(errorMessage, isPresented: $showError, actions: {
             
-        })
+        }).task {
+            // Limiting to intiial fetch because tasks is alternative to onAppear
+            // Whenever tab is changed or reopened it will be called like onAppear
+            if myProfile != nil {return}
+            // MARK: Initial Fetch
+            await fetchUserData()
+        }
+    }
+    
+    func fetchUserData()async{
+        guard let userID = Auth.auth().currentUser?.uid else {return}
+        
+        guard let user = try? await Firestore.firestore().collection("users").document(userID).getDocument(as: User.self) else {return}
+        
+                await MainActor.run(body: {
+                    myProfile = user
+                })
     }
     
     func logoutUser(){
