@@ -183,7 +183,7 @@ struct ScoreCardView: View {
             }.vAlign(.center)
             
             CustomButton(title: "Back To Home", onClick: {
-                Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).updateData([
+                Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName ).updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
                 dismiss()
                 onDismiss()

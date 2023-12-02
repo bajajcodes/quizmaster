@@ -66,6 +66,7 @@ struct ProfileView: View {
     }
     
     func fetchUserData()async{
+        isLoading = true
         guard let userID = Auth.auth().currentUser?.uid else {return}
         
         guard let user = try? await Firestore.firestore().collection("users").document(userID).getDocument(as: User.self) else {return}
