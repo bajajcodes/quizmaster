@@ -121,11 +121,11 @@ struct Home: View {
         })
     }
     
-    func logInUserAnonymous()async throws {
-        if !logStatus {
-            try await Auth.auth().signInAnonymously();
-        }
-    }
+//    func logInUserAnonymous()async throws {
+//        if !logStatus {
+//            try await Auth.auth().signInAnonymously();
+//        }
+//    }
 }
 
 #Preview {

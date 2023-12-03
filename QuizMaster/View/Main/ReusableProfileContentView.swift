@@ -28,6 +28,10 @@ struct ReusableProfileContentView: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                         
+                        Text("Total Score: " + String(format: "%.2f%", user?.score ?? 0.0))
+                            .font(.callout)
+                            .lineLimit(3)
+                        
                         Text(user?.userBio ?? "UserBio Placeholder")
                             .font(.caption)
                             .lineLimit(3)

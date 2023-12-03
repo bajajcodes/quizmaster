@@ -15,7 +15,10 @@ struct ProfileView: View {
     @State private var showError: Bool = false;
     @State private var errorMessage: String = "";
 //    @State var isLoading: Bool = false;
-    @AppStorage("log_status") var logStatus: Bool = false
+    @AppStorage("log_status") var logStatus: Bool = false;
+    @AppStorage("user_profile_url") var profileUrl: URL?;
+    @AppStorage("user_name") var userNameStored: String = "";
+    @AppStorage("user_UID") var userUID: String = "";
     
 
     var body: some View {
@@ -80,6 +83,9 @@ struct ProfileView: View {
     func logoutUser(){
         try? Auth.auth().signOut()
         logStatus = false
+        userUID = ""
+        profileUrl = nil
+        userNameStored = ""
     }
     
     // MARK: Diaply error via Alert

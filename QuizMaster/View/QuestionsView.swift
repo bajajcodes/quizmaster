@@ -193,6 +193,11 @@ struct ScoreCardView: View {
             CustomButton(title: "Back To Home", onClick: {
                 Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName ).updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
+                guard let userID = Auth.auth().currentUser?.uid else {return}
+
+                print("userID: \(userID)")
+                Firestore.firestore().collection("users").document(userID).updateData([
+                    "score": FieldValue.increment(score)])
                 createQuizPlayed()
                 // MARK: store quiz played document
                 dismiss()
