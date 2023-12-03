@@ -54,6 +54,11 @@ struct ExploreQuizesView: View {
                 .padding()
             }
             .navigationTitle("All Quiz")
+            .refreshable {
+                // MARK: Refresh Quiz Data
+                self.allQuiz = nil
+                await fetchAllQuizData()
+            }
             
         }
         .task {
