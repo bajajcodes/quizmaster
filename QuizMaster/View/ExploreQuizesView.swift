@@ -66,7 +66,7 @@ struct ExploreQuizesView: View {
 
     func fetchAllQuizData() async {
         do {
-            try await Auth.auth().signInAnonymously()
+//            try await Auth.auth().signInAnonymously()
             let quizes = try await Firestore.firestore().collection("Quiz").getDocuments().documents.compactMap {
                 try $0.data(as: QuizInspiration.self)
             }

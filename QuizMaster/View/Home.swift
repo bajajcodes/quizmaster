@@ -109,7 +109,7 @@ struct Home: View {
     }
 
     func fetchData()async throws{
-        try await logInUserAnonymous()
+//        try await logInUserAnonymous()
         let info = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).getDocument().data(as: Info.self)
         let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).collection("questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
         )}

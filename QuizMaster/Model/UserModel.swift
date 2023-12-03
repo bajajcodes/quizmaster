@@ -13,6 +13,7 @@ struct User: Codable {
     var userUID: String
     var userEmail: String
     var userProfileURL: URL
+//    var score: Int64 = 0;
     
     enum CodingKeys: CodingKey {
 //        case id
@@ -21,5 +22,6 @@ struct User: Codable {
         case userUID
         case userEmail
         case userProfileURL
+//        case score
     }
 }
