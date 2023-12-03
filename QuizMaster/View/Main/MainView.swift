@@ -20,7 +20,13 @@ struct MainView: View {
                     Image(systemName: "gear")
                     Text("Profile")
                 }
-        }.tint(.black)
+            
+            LeaderboardView()
+                .tabItem{
+                    Image(systemName: "trophy")
+                    Text("Leaderboard")
+                }
+        }.tint(Color.oPink)
     }
 }
 

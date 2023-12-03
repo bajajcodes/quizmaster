@@ -14,8 +14,11 @@ struct ProfileView: View {
     @State private var myProfile: User?
     @State private var showError: Bool = false;
     @State private var errorMessage: String = "";
-    @State var isLoading: Bool = false;
-    @AppStorage("log_status") var logStatus: Bool = false
+//    @State var isLoading: Bool = false;
+    @AppStorage("log_status") var logStatus: Bool = false;
+    @AppStorage("user_profile_url") var profileUrl: URL?;
+    @AppStorage("user_name") var userNameStored: String = "";
+    @AppStorage("user_UID") var userUID: String = "";
     
 
     var body: some View {
@@ -50,9 +53,9 @@ struct ProfileView: View {
                 }
             }
         }
-        .overlay(content: {
-            LoadingView(show: $isLoading)
-        })
+//        .overlay(content: {
+//            LoadingView(show: $isLoading)
+//        })
         // MARK: display error
         .alert(errorMessage, isPresented: $showError, actions: {
             
@@ -64,9 +67,10 @@ struct ProfileView: View {
             await fetchUserData()
         }
     }
+
     
     func fetchUserData()async{
-        isLoading = true
+//        isLoading = true
         guard let userID = Auth.auth().currentUser?.uid else {return}
         
         guard let user = try? await Firestore.firestore().collection("users").document(userID).getDocument(as: User.self) else {return}
@@ -79,6 +83,9 @@ struct ProfileView: View {
     func logoutUser(){
         try? Auth.auth().signOut()
         logStatus = false
+        userUID = ""
+        profileUrl = nil
+        userNameStored = ""
     }
     
     // MARK: Diaply error via Alert
@@ -88,7 +95,7 @@ struct ProfileView: View {
             print(error)
             errorMessage = error.localizedDescription;
             showError.toggle()
-            isLoading = false
+//            isLoading = false
         })
     }
 }

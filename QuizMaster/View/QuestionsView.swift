@@ -5,6 +5,7 @@
 
 import SwiftUI
 import FirebaseFirestore
+import FirebaseAuth
 
 struct QuestionsView: View {
     let quizInspiration: QuizInspiration
@@ -158,6 +159,13 @@ struct ScoreCardView: View {
     // move to home screen
     var onDismiss: ()->()
     @Environment(\.dismiss) private var dismiss
+    @State private var showError: Bool = false;
+    @State private var errorMessage: String = "";
+    // MARK: User Defaults
+    @AppStorage("user_profile_url") var profileURL: URL?;
+    @AppStorage("user_name") var userNameStored: String = "";
+    @AppStorage("user_UID") var userUID: String = "";
+    
     var body: some View{
         VStack{
             VStack(spacing: 15){
@@ -171,9 +179,9 @@ struct ScoreCardView: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                     //  Removing Floating Points
-                    Text(String(format: "%.0f", score) + "%")
+                    Text(String(format: "%.2f%%", score))
                         .font(.title.bold())
-                            .padding(.bottom, 10)
+                        .padding(.bottom, 10)
                     
                     Image("Medal").resizable().aspectRatio(contentMode: .fit).frame(height: 220)
                 }.foregroundColor(.black).padding(.horizontal, 15).padding(.vertical, 20).hAlign(.center).background{
@@ -185,13 +193,57 @@ struct ScoreCardView: View {
             CustomButton(title: "Back To Home", onClick: {
                 Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName ).updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
+                guard let userID = Auth.auth().currentUser?.uid else {return}
+
+                print("userID: \(userID)")
+                Firestore.firestore().collection("users").document(userID).updateData([
+                    "score": FieldValue.increment(score)])
+                createQuizPlayed()
+                // MARK: store quiz played document
                 dismiss()
                 onDismiss()
             })
-        }.padding(15).background {
+        }
+        .padding(15)
+        .background {
             Color("BG").ignoresSafeArea()
         }
-    }}
+        .alert(errorMessage, isPresented: $showError, actions: {})
+    }
+    
+    func createQuizPlayed(){
+        Task {
+            do{
+                guard let userID = Auth.auth().currentUser?.uid else {return}
+                guard let profileURL = profileURL else {return}
+                let quizPlayed = QuizPlayedModel(quizReferenceID: quizInspiration.quizCollectionIDName, title: quizInspiration.title, description: quizInspiration.description, imageURL: quizInspiration.imageURL, score: score, userName: userNameStored, userUID: userID, userProfileURL: profileURL)
+                try await createDocumentAtFirebase(quizPlayed)
+            }catch {
+                await setError(error)
+            }
+        }
+    }
+    
+    func createDocumentAtFirebase(_ quizPlayed: QuizPlayedModel)async throws{
+        let _ = try Firestore.firestore().collection("QuizPlayed").addDocument(from: quizPlayed, completion: {error in
+            if error == nil {
+                
+            }
+        })
+    }
+    
+    // MARK: Diaply error via Alert
+    func setError(_ error: Error)async{
+        // MARK: UI must be updated on Main Thread
+        await MainActor.run(body: {
+            print(error)
+            errorMessage = error.localizedDescription;
+            showError.toggle()
+           
+        })
+    }
+    
+}
 
 #Preview {
     ContentView()

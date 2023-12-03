@@ -7,6 +7,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct ReusableProfileContentView: View {
+    @State private var allQuizPlayed: [QuizPlayedModel] = []
     var user: User?;
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -27,6 +28,10 @@ struct ReusableProfileContentView: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                         
+                        Text("Total Score: " + String(format: "%.2f%", user?.score ?? 0.0))
+                            .font(.callout)
+                            .lineLimit(3)
+                        
                         Text(user?.userBio ?? "UserBio Placeholder")
                             .font(.caption)
                             .lineLimit(3)
@@ -41,6 +46,8 @@ struct ReusableProfileContentView: View {
                     .foregroundColor(.black)
                     .hAlign(.leading)
                     .padding(.vertical, 15)
+                
+                ReuseablePostView(allQuizPlayed: $allQuizPlayed)
                 
                 
             }

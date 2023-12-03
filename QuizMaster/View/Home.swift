@@ -57,7 +57,7 @@ struct Home: View {
                 }catch{
                     print(error)
                 }
-            }
+            }.zIndex(50)
         }
     }
     
@@ -109,7 +109,7 @@ struct Home: View {
     }
 
     func fetchData()async throws{
-        try await logInUserAnonymous()
+//        try await logInUserAnonymous()
         let info = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).getDocument().data(as: Info.self)
         let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).collection("questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
         )}
@@ -121,15 +121,15 @@ struct Home: View {
         })
     }
     
-    func logInUserAnonymous()async throws {
-        if !logStatus {
-            try await Auth.auth().signInAnonymously();
-        }
-    }
+//    func logInUserAnonymous()async throws {
+//        if !logStatus {
+//            try await Auth.auth().signInAnonymously();
+//        }
+//    }
 }
 
 #Preview {
-    Home(quizInspiration: QuizInspiration.exampleSwiftUI())
+    ContentView()
 }
 
 // MARK: View Extensions

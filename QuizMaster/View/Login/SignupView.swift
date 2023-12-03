@@ -168,7 +168,7 @@ struct SignupView: View {
                 // Step3: downloading photo url
                 let downloadUrl = try await storageRef.downloadURL()
                 // Step4: creating a user firestore object
-                let user = User(username: userName, userBio: userBio, userUID: userUID, userEmail: emailID, userProfileURL: downloadUrl)
+                let user = User(username: userName, userBio: userBio, userUID: userUID, userEmail: emailID, userProfileURL: downloadUrl, score: 0.0)
                 // Step5: saving user doc into firestore database
                 try Firestore.firestore().collection("users").document(userUID).setData(from: user, completion: {
                     error in
