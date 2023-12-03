@@ -57,7 +57,7 @@ struct Home: View {
                 }catch{
                     print(error)
                 }
-            }
+            }.zIndex(50)
         }
     }
     
