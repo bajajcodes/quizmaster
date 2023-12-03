@@ -36,7 +36,7 @@ struct Home: View {
                 
                 CustomButton(title: "Start Test", onClick: {
                     startQuiz.toggle()
-                }).vAlign(.bottom)
+                }).vAlign(.bottom).padding(.bottom,30)
                 
             }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
                 QuestionsView(quizInspiration: quizInspiration, quizInfo: info,quizQuestions: quizQuestions){
@@ -64,7 +64,7 @@ struct Home: View {
     // - Rules View
     @ViewBuilder
     func RulesView(_ rules: [String]) -> some View{
-        VStack(alignment: .leading, spacing: 15){
+        VStack(alignment: .leading, spacing: 15){   
             Text("Before you start")
                 .font(.title3)
                 .fontWeight(.bold)
