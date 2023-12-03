@@ -13,40 +13,72 @@ struct LeaderboardView: View {
     @State private var isFetching: Bool = true
     @State private var showError: Bool = false;
     @State private var errorMessage: String = "";
+    @State private var paginationDoc: QueryDocumentSnapshot?
+
 
     var body: some View {
         NavigationView{
-            VStack{
+            ScrollView(.vertical, showsIndicators: false){
                 
-                
-                if isFetching {
-                    ProgressView()
-                        .padding(.top, 30)
-                }else {
-                    if allUsers.isEmpty {
-                        Text("No User's Found")
-                            .font(.callout)
-                            .foregroundColor(.gray)
+                LazyVStack {
+                    
+                    if isFetching {
+                        ProgressView()
                             .padding(.top, 30)
                     }else {
-                        LeaderboardUserPostView(allUsers: $allUsers)
-                        .refreshable {
-                            // MARK: Refresh User Data
-                            isFetching = true
-                            self.allUsers = []
-                            await fetchAllUsers()
-                        }
+                        if allUsers.isEmpty {
+                            Text("No User's Found")
+                                .font(.callout)
+                                .foregroundColor(.gray)
+                                .padding(.top, 30)
+                        }else {
+                                
+                                    ForEach(Array(allUsers.enumerated()), id: \.element.id) { (index, user) in
+                                        UserPostView(user: user, rank: index+1)
+                                            .onAppear{
+                                                print("inside user post view on appear")
+                                                // when last post appears, fetching new post. If There.
+                                                if user.id == allUsers.last?.id && paginationDoc != nil {
+                                                    print("Fetch new Post's inside leaderboard view")
+                                                    Task{
+                                                        await fetchAllUsers()
+                                                    }
+                                                }
+                                            }
+                                        
+                                        Divider()
+                                            .padding(.horizontal, -15)
+
+                                    }
+                                    .refreshable {
+                // MARK: Refresh User Data
+                isFetching = true
+                self.allUsers = []
+                await fetchAllUsers()
+            }
+                                
+                                
+                                              }
                     }
+                    
                 }
                 
+                
             }.navigationTitle("Leaderboard")
+                .padding(.horizontal, 15)
+                .refreshable {
+// MARK: Refresh User Data
+isFetching = true
+self.allUsers = []
+await fetchAllUsers()
+}
+            
+            
             }
         // MARK: display error
         .alert(errorMessage, isPresented: $showError, actions: {
             
         }).task {
-            // Limiting to intiial fetch because tasks is alternative to onAppear
-            // Whenever tab is changed or reopened it will be called like onAppear
             guard allUsers.isEmpty else {return}
             // MARK: Initial Fetch
             await fetchAllUsers()
@@ -55,18 +87,26 @@ struct LeaderboardView: View {
     
     func fetchAllUsers()async{
         do{
-//            guard let userID = Auth.auth().currentUser?.uid else {return}
 
             var query: Query!
-            query = Firestore.firestore().collection("users")
-                .order(by: "score", descending: true)
-                .limit(to: 20)
+            if let paginationDoc {
+                query = Firestore.firestore().collection("users")
+                    .order(by: "score", descending: true)
+                    .start(afterDocument: paginationDoc)
+                    .limit(to: 5)
+            }
+            else {
+                query = Firestore.firestore().collection("users")
+                    .order(by: "score", descending: true)
+                    .limit(to: 5)
+            }
             let docs = try await query.getDocuments()
             let fetchedUsers = try docs.documents.compactMap{ doc -> User? in
                 try doc.data(as: User.self)
             }
             await MainActor.run(body: {
-                allUsers = fetchedUsers
+                allUsers.append(contentsOf: fetchedUsers)
+                paginationDoc = docs.documents.last
                 isFetching = false
             })
         }catch{

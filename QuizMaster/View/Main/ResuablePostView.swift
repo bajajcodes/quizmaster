@@ -13,6 +13,7 @@ struct ReuseablePostView: View {
     @State private var isFetching: Bool = true
     @State private var showError: Bool = false;
     @State private var errorMessage: String = "";
+    @State private var paginationDoc: QueryDocumentSnapshot?
 
     var body: some View {
         
@@ -30,8 +31,19 @@ struct ReuseablePostView: View {
                             .foregroundColor(.gray)
                             .padding(.top, 30)
                     }else{
-                        ForEach(allQuizPlayed) { play in
-                            QuizPostView(quizPlayed: play)
+                        ForEach(allQuizPlayed) { quiz in
+                            QuizPostView(quizPlayed: quiz)
+                                .onAppear{
+                                    // when last post appears, fetching new post. If There.
+                                    if quiz.id == allQuizPlayed.last?.id && paginationDoc != nil {
+                                        print("Fetch new Post's inside post profile")
+                                        Task{
+                                            await fetchAllQuiz()
+                                        }
+                                    }
+                                }
+                            Divider()
+                                .padding(.horizontal, -15)
                         }
                         .refreshable {
                             // MARK: Refresh User Data
@@ -70,16 +82,28 @@ struct ReuseablePostView: View {
             guard let userID = Auth.auth().currentUser?.uid else {return}
 
             var query: Query!
-            query = Firestore.firestore().collection("QuizPlayed")
-                .whereField("userUID", isEqualTo: userID)
-                .order(by: "publishedDate", descending: true)
-                .limit(to: 20)
+            // MARK: implement pagination
+            if let paginationDoc {
+                query = Firestore.firestore().collection("QuizPlayed")
+                    .whereField("userUID", isEqualTo: userID)
+                    .order(by: "publishedDate", descending: true)
+                    .start(afterDocument: paginationDoc)
+                    .limit(to: 20)
+            }
+            else {
+                query = Firestore.firestore().collection("QuizPlayed")
+                    .whereField("userUID", isEqualTo: userID)
+                    .order(by: "publishedDate", descending: true)
+                    .limit(to: 20)
+            }
+
             let docs = try await query.getDocuments()
             let fetchedQuizs = try docs.documents.compactMap{ doc -> QuizPlayedModel? in
                 try doc.data(as: QuizPlayedModel.self)
             }
             await MainActor.run(body: {
-                allQuizPlayed = fetchedQuizs
+                allQuizPlayed.append(contentsOf: fetchedQuizs)
+                paginationDoc = docs.documents.last
                 isFetching = false
             })
         }catch{
