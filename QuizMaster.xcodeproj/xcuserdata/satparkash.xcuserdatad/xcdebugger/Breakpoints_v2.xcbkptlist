@@ -1185,10 +1185,195 @@
             filePath = "QuizMaster/View/Main/ResuablePostView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "ReuseablePostView"
-            landmarkType = "14">
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "fetchAllQuizData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - e385b6c9cc3f26cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - d8f11b92b6f3225a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - 8815540be09a4adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - bb7527f4b55b4091"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - 26fe98b6fca505b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) throws -&gt; Swift.Optional&lt;QuizMaster.QuizInspiration&gt; in QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - e385b6c9cc3f26cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - 8815540be09a4adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - 1ee27b4a1b45eea9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "D2113472-0C29-44F1-8F14-C8F4DA270D20 - 682be9e52197a0b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71DBDD0B-F901-4985-A71B-289C8B1AE573"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizMaster/View/ExploreQuizesView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "fetchAllQuizData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71DBDD0B-F901-4985-A71B-289C8B1AE573 - 8815540be09a4a78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "71DBDD0B-F901-4985-A71B-289C8B1AE573 - 1ee27b4a1b45ee0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for QuizMaster.ExploreQuizesView.fetchAllQuizData() async -&gt; ()"
+                  moduleName = "QuizMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/ExploreQuizesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
