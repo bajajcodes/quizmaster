@@ -33,5 +33,5 @@ struct QuizInspirationCardView: View {
 }
 
 #Preview {
-    QuizInspirationCardView(quizInspiration: QuizInspiration.exampleSwiftUI()).padding()
+    ContentView()
 }

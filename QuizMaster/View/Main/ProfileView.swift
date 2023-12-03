@@ -64,6 +64,7 @@ struct ProfileView: View {
             await fetchUserData()
         }
     }
+
     
     func fetchUserData()async{
 //        isLoading = true

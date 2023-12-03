@@ -13,7 +13,7 @@ struct QuizPlayedModel: Identifiable,Codable {
     var quizReferenceID: String
     var title: String
     var description: String
-    var imageURL: URL?
+    var imageURL: URL
     // MARK: Quiz Played Info
     var score: CGFloat
     var publishedDate: Date = Date()

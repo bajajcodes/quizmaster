@@ -179,7 +179,7 @@ struct ScoreCardView: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                     //  Removing Floating Points
-                    Text(String(format: "%.0f", score) + "%")
+                    Text(String(format: "%.2f%%", score))
                         .font(.title.bold())
                         .padding(.bottom, 10)
                     
@@ -211,7 +211,7 @@ struct ScoreCardView: View {
             do{
                 guard let userID = Auth.auth().currentUser?.uid else {return}
                 guard let profileURL = profileURL else {return}
-                let quizPlayed = QuizPlayedModel(quizReferenceID: quizInspiration.quizCollectionIDName, title: quizInspiration.title, description: quizInspiration.description, score: score, userName: userNameStored, userUID: userID, userProfileURL: profileURL)
+                let quizPlayed = QuizPlayedModel(quizReferenceID: quizInspiration.quizCollectionIDName, title: quizInspiration.title, description: quizInspiration.description, imageURL: quizInspiration.imageURL, score: score, userName: userNameStored, userUID: userID, userProfileURL: profileURL)
                 try await createDocumentAtFirebase(quizPlayed)
             }catch {
                 await setError(error)

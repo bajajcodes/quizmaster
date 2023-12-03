@@ -129,7 +129,7 @@ struct Home: View {
 }
 
 #Preview {
-    Home(quizInspiration: QuizInspiration.exampleSwiftUI())
+    ContentView()
 }
 
 // MARK: View Extensions
