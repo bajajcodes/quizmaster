@@ -26,7 +26,6 @@ struct ExploreQuizesView: View {
 
     var body: some View {
                 
-        NavigationView {
             ScrollView {
                 LazyVStack() {
                     if let quizInspirations = allQuiz {
@@ -62,7 +61,6 @@ struct ExploreQuizesView: View {
                 await fetchAllQuizData()
             }
             
-        }
         .task {
             await fetchAllQuizData()
         }

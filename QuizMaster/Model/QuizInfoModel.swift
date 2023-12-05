@@ -14,7 +14,6 @@ struct QuizInfoModel: Identifiable, Codable {
     var title: String;
     var peopleAttended: Int;
     var rules: [String];
-//    var questions: [Question]
     
     enum CondingKeys: CodingKey {
         case id
@@ -23,6 +22,5 @@ struct QuizInfoModel: Identifiable, Codable {
         case rules
         case description
         case imageURL
-//        case questions
     }
 }

@@ -10,7 +10,6 @@ import FirebaseAuth
 struct QuestionsView: View {
     let quizInspiration: QuizInfoModel
     let quizCategory: QuizCategoryModel
-//    var quizInfo: Info
     @State var quizQuestions: [Question];
     var onFinish: ()->()
     
@@ -99,8 +98,6 @@ struct QuestionsView: View {
     // Question View
     @ViewBuilder
     func QuestionView(_ question: Question)-> some View{
-//        RoundedRectangle(cornerRadius: 20, style: .continuous)
-//            .fill(.white).padding(.horizontal, 15)
         
         VStack(alignment: .leading, spacing: 15) {
             Text("Question\(currentIndex + 1)/\(quizQuestions.count)")
@@ -202,12 +199,8 @@ struct ScoreCardView: View {
                 .updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
                 
-//                Firestore.firestore().collection("Quiz2").document(quizInspiration.id ?? "NA" ).updateData([
-//                    "peopleAttended": FieldValue.increment(1.0)])
                 
                 guard let userID = Auth.auth().currentUser?.uid else {return}
-
-                print("userID: \(userID)")
                 
                 Firestore.firestore().collection("users").document(userID).updateData([
                     "score": FieldValue.increment(score)])

@@ -40,7 +40,7 @@ struct QuizesCategoriesView: View {
                                     .cornerRadius(30)
                                     .foregroundColor(.white)
                                     
-                                    Text("Programming")
+                                    Text(quizCategory.title)
                                         .foregroundColor(.white)
                                         .font(.system(size: 16, weight: .bold, design: .rounded))
                                         .font(.callout)
