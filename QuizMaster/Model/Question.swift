@@ -5,9 +5,11 @@
 
 
 import SwiftUI
+import FirebaseFirestoreSwift
+
 
 struct Question:  Identifiable, Codable{
-    var id: UUID = .init();
+    @DocumentID var id: String?
     var question: String;
     var answer: String;
     var options: [String];
@@ -15,6 +17,7 @@ struct Question:  Identifiable, Codable{
     var tappedAnswer: String  = "";
     
     enum CodingKeys: CodingKey {
+        case id
         case question
         case options
         case answer

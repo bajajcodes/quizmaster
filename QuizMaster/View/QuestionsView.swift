@@ -8,8 +8,8 @@ import FirebaseFirestore
 import FirebaseAuth
 
 struct QuestionsView: View {
-    let quizInspiration: QuizInspiration
-    var quizInfo: Info
+    let quizInspiration: QuizInfoModel
+//    var quizInfo: Info
     @State var quizQuestions: [Question];
     var onFinish: ()->()
     
@@ -32,7 +32,7 @@ struct QuestionsView: View {
                 .foregroundColor(.white)
         }.hAlign(.leading)
             
-            Text(quizInfo.title).font(.title).fontWeight(.semibold).foregroundColor(.white)
+            Text(quizInspiration.title).font(.title).fontWeight(.semibold).foregroundColor(.white)
             
             GeometryReader{
                 let size = $0.size
@@ -155,7 +155,7 @@ struct QuestionsView: View {
 // MARK: Score Card View
 struct ScoreCardView: View {
     var score: CGFloat
-    let quizInspiration: QuizInspiration
+    let quizInspiration: QuizInfoModel
     // move to home screen
     var onDismiss: ()->()
     @Environment(\.dismiss) private var dismiss
@@ -191,7 +191,7 @@ struct ScoreCardView: View {
             }.vAlign(.center)
             
             CustomButton(title: "Back To Home", onClick: {
-                Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName ).updateData([
+                Firestore.firestore().collection("Quiz").document(quizInspiration.id ?? "NA" ).updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
                 guard let userID = Auth.auth().currentUser?.uid else {return}
 
@@ -216,7 +216,7 @@ struct ScoreCardView: View {
             do{
                 guard let userID = Auth.auth().currentUser?.uid else {return}
                 guard let profileURL = profileURL else {return}
-                let quizPlayed = QuizPlayedModel(quizReferenceID: quizInspiration.quizCollectionIDName, title: quizInspiration.title, description: quizInspiration.description, imageURL: quizInspiration.imageURL, score: score, userName: userNameStored, userUID: userID, userProfileURL: profileURL)
+                let quizPlayed = QuizPlayedModel(quizReferenceID: quizInspiration.id ?? "NA", title: quizInspiration.title, description: quizInspiration.description, imageURL: quizInspiration.imageURL, score: score, userName: userNameStored, userUID: userID, userProfileURL: profileURL)
                 try await createDocumentAtFirebase(quizPlayed)
             }catch {
                 await setError(error)

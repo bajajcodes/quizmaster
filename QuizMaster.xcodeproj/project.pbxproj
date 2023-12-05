@@ -43,6 +43,9 @@
 		8BDEE8692B1A5DD400C21112 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8BDEE8682B1A5DD400C21112 /* FirebaseStorage */; };
 		8BDEE86B2B1A611A00C21112 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEE86A2B1A611A00C21112 /* UserModel.swift */; };
 		8BDEE86D2B1A6BA800C21112 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEE86C2B1A6BA800C21112 /* LoadingView.swift */; };
+		8BFB7AB32B1F0509009C6296 /* QuizesCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB7AB22B1F0509009C6296 /* QuizesCategoriesView.swift */; };
+		8BFB7AB52B1F4A53009C6296 /* QuizCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB7AB42B1F4A53009C6296 /* QuizCategoryModel.swift */; };
+		8BFB7AB72B1F4B3B009C6296 /* QuizInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB7AB62B1F4B3B009C6296 /* QuizInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		8BD4D3112B172B8200C34089 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8BDEE86A2B1A611A00C21112 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8BDEE86C2B1A6BA800C21112 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8BFB7AB22B1F0509009C6296 /* QuizesCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesCategoriesView.swift; sourceTree = "<group>"; };
+		8BFB7AB42B1F4A53009C6296 /* QuizCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCategoryModel.swift; sourceTree = "<group>"; };
+		8BFB7AB62B1F4B3B009C6296 /* QuizInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 		8BD4D30A2B17296600C34089 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BFB7AB12B1F04EB009C6296 /* Layout */,
 				8B8866562B1B3C69005338EF /* Main */,
 				8B8866532B1B3AFA005338EF /* Helpers */,
 				8B8866522B1B3AD4005338EF /* Login */,
@@ -200,6 +207,8 @@
 				8BDEE86A2B1A611A00C21112 /* UserModel.swift */,
 				8B8866602B1B503B005338EF /* UserQuizModel.swift */,
 				8B8866662B1C4E4E005338EF /* QuizPlayedModel.swift */,
+				8BFB7AB42B1F4A53009C6296 /* QuizCategoryModel.swift */,
+				8BFB7AB62B1F4B3B009C6296 /* QuizInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +225,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BFB7AB12B1F04EB009C6296 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8BFB7AB22B1F0509009C6296 /* QuizesCategoriesView.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +326,9 @@
 				8B8866512B1B0CE2005338EF /* ExploreQuizesView.swift in Sources */,
 				8BD4D3122B172B8200C34089 /* Question.swift in Sources */,
 				8B8866612B1B503B005338EF /* UserQuizModel.swift in Sources */,
+				8BFB7AB72B1F4B3B009C6296 /* QuizInfoModel.swift in Sources */,
 				8BD4D2F62B17194A00C34089 /* ContentView.swift in Sources */,
+				8BFB7AB52B1F4A53009C6296 /* QuizCategoryModel.swift in Sources */,
 				8BDEE86D2B1A6BA800C21112 /* LoadingView.swift in Sources */,
 				8B5FD47E2B1A310100FA6A8D /* LoginView.swift in Sources */,
 				8B38D9202B178739009B0F2A /* QuestionsView.swift in Sources */,
@@ -326,6 +345,7 @@
 				8B8866632B1C4B64005338EF /* LeaderboardView.swift in Sources */,
 				8B8866582B1B3C77005338EF /* MainView.swift in Sources */,
 				8BD4D2F42B17194A00C34089 /* QuizMasterApp.swift in Sources */,
+				8BFB7AB32B1F0509009C6296 /* QuizesCategoriesView.swift in Sources */,
 				8B96F3882B1CBD910093CAB9 /* LeaderboardUserPostView.swift in Sources */,
 				8B88665C2B1B49FB005338EF /* ReusableProfileContentView.swift in Sources */,
 			);

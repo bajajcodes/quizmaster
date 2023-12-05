@@ -9,7 +9,7 @@ import SDWebImageSwiftUI
 
 
 struct QuizInspirationCardView: View {
-    let quizInspiration: QuizInspiration
+    let quizInspiration: QuizInfoModel
     let padding: CGFloat = 10
     
     var body: some View {

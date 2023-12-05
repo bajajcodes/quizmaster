@@ -7,14 +7,18 @@
 import SwiftUI
 import Firebase
 import FirebaseAuth
+import Foundation
+
 
 import SwiftUI
 import Firebase
 import FirebaseAuth
 
 struct ExploreQuizesView: View {
+    let quizCategory: QuizCategoryModel?
+
     // MARK: My Quiz's Data
-    @State private var allQuiz: [QuizInspiration]?
+    @State private var allQuiz: [QuizInfoModel]?
     @State private var showError: Bool = false
     @State private var errorMessage: String = ""
     @State private var startQuiz: Bool = true;
@@ -24,10 +28,10 @@ struct ExploreQuizesView: View {
                 
         NavigationView {
             ScrollView {
-                LazyVStack(spacing: 10) {
+                LazyVStack() {
                     if let quizInspirations = allQuiz {
                         ScrollView {
-                            LazyVStack(spacing: 10) {
+                            LazyVStack() {
                                 ForEach(quizInspirations) { quizInspiration in
                                     NavigationLink(destination: Home(quizInspiration: quizInspiration)) {
                                         QuizInspirationCardView(quizInspiration: quizInspiration)
@@ -51,9 +55,9 @@ struct ExploreQuizesView: View {
                         }
                     }
                 }
-                .padding()
+//                .padding()
             }
-            .navigationTitle("All Quiz")
+            .navigationTitle("Select Quiz")
             .refreshable {
                 // MARK: Refresh Quiz Data
                 self.allQuiz = nil
@@ -72,8 +76,9 @@ struct ExploreQuizesView: View {
     func fetchAllQuizData() async {
         do {
 //            try await Auth.auth().signInAnonymously()
-            let quizes = try await Firestore.firestore().collection("Quiz").getDocuments().documents.compactMap {
-                try $0.data(as: QuizInspiration.self)
+        // MARK: id cannot be null
+            let quizes = try await Firestore.firestore().collection("Quiz2").document(quizCategory?.id ?? "").collection("quizes").getDocuments().documents.compactMap {
+                try $0.data(as: QuizInfoModel.self)
             }
 
             await MainActor.run {
@@ -96,10 +101,10 @@ struct ExploreQuizesView: View {
 
 struct ExploreQuizesView_Previews: PreviewProvider {
     static var previews: some View {
-        ExploreQuizesView()
+        ContentView()
     }
 }
 
 #Preview {
-    ExploreQuizesView()
+    ContentView()
 }

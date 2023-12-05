@@ -15,7 +15,7 @@ struct MainView: View {
     var body: some View {
         // MARK: TabView with quizes and profile tab
         TabView(selection: $currentTab){
-            ExploreQuizesView()
+            QuizesCategoriesView()
                 .tabItem{
                     Image(systemName: "rectangle.portrait.on.rectangle.portrait.angled")
                     Text("All Quiz")

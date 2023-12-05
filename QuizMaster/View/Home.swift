@@ -8,9 +8,9 @@ import Firebase
 import FirebaseFirestoreSwift
 
 struct Home: View {
-    let quizInspiration: QuizInspiration
+    let quizInspiration: QuizInfoModel
     
-    @State private var quizInfo: Info?
+    @State private var quizInfo: QuizInfoModel?
     @State private var quizQuestions: [Question] = [];
     @State private var startQuiz: Bool = false;
     @AppStorage("log_status") private var logStatus: Bool = false;
@@ -39,7 +39,7 @@ struct Home: View {
                 }).vAlign(.bottom).padding(.bottom,30)
                 
             }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
-                QuestionsView(quizInspiration: quizInspiration, quizInfo: info,quizQuestions: quizQuestions){
+                QuestionsView(quizInspiration: quizInspiration, quizQuestions: quizQuestions){
                     // user has succesfully finished the quiz thus update the BE and UI
                     quizInfo?.peopleAttended += 1
                     dismiss()
@@ -110,13 +110,13 @@ struct Home: View {
 
     func fetchData()async throws{
 //        try await logInUserAnonymous()
-        let info = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).getDocument().data(as: Info.self)
-        let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.quizCollectionIDName).collection("questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
+//        let info = try await Firestore.firestore().collection("Quiz2").document(quizInspiration.quizCollectionIDName).getDocument().data(as: QuizInfoModel.self)
+        let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.id ?? "NA" ).collection("questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
         )}
         
         //UI must be updated on Main Thread
         await MainActor.run(body: {
-            quizInfo = info;
+            quizInfo = quizInspiration;
             quizQuestions = questions;
         })
     }
