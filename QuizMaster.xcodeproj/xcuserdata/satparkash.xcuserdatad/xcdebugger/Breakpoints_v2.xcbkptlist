@@ -7,130 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "QuizMaster/View/Home.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "fetchData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5 - b2e5b480410219c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) await resume partial function for QuizMaster.Home.fetchData() async throws -&gt; ()"
-                  moduleName = "QuizMaster"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/Home.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "156">
-               </Location>
-               <Location
-                  uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5 - 69ef87ef233515fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for QuizMaster.Home.fetchData() async throws -&gt; ()"
-                  moduleName = "QuizMaster"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/Home.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "884">
-               </Location>
-               <Location
-                  uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5 - 922cfb34bf78bdfc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for QuizMaster.Home.fetchData() async throws -&gt; ()"
-                  moduleName = "QuizMaster"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/Home.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "732">
-               </Location>
-               <Location
-                  uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5 - 1e692f5038bc65fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for QuizMaster.Home.fetchData() async throws -&gt; ()"
-                  moduleName = "QuizMaster"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/Home.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5 - 4488b943faddb1fb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for QuizMaster.Home.fetchData() async throws -&gt; ()"
-                  moduleName = "QuizMaster"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/Home.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "4D3A66BE-0ABE-4E07-8FEF-2D057B4AF3C5 - 444b1f3e286dfa0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for QuizMaster.Home.fetchData() async throws -&gt; ()"
-                  moduleName = "QuizMaster"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/satparkash/code/QuizMaster/QuizMaster/View/Home.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "124">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "47A798E2-EE24-4CF3-9221-0D3EBF3B5A06"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "QuizMaster/View/Home.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "fetchData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9E453B53-DC60-4FB5-8B72-60F6D0FCF08B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -138,8 +14,8 @@
             filePath = "QuizMaster/View/Home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "CustomLabel(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,8 +30,8 @@
             filePath = "QuizMaster/View/Home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "Home"
             landmarkType = "14">
             <Locations>
@@ -1338,8 +1214,8 @@
             filePath = "QuizMaster/View/ExploreQuizesView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "fetchAllQuizData()"
             landmarkType = "7">
             <Locations>

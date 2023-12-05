@@ -15,7 +15,7 @@ import Firebase
 import FirebaseAuth
 
 struct ExploreQuizesView: View {
-    let quizCategory: QuizCategoryModel?
+    let quizCategory: QuizCategoryModel
 
     // MARK: My Quiz's Data
     @State private var allQuiz: [QuizInfoModel]?
@@ -33,7 +33,7 @@ struct ExploreQuizesView: View {
                         ScrollView {
                             LazyVStack() {
                                 ForEach(quizInspirations) { quizInspiration in
-                                    NavigationLink(destination: Home(quizInspiration: quizInspiration)) {
+                                    NavigationLink(destination: Home(quizInspiration: quizInspiration, quizCategory: quizCategory )) {
                                         QuizInspirationCardView(quizInspiration: quizInspiration)
                                     }
                                 }
@@ -55,9 +55,7 @@ struct ExploreQuizesView: View {
                         }
                     }
                 }
-//                .padding()
             }
-            .navigationTitle("Select Quiz")
             .refreshable {
                 // MARK: Refresh Quiz Data
                 self.allQuiz = nil
@@ -77,7 +75,7 @@ struct ExploreQuizesView: View {
         do {
 //            try await Auth.auth().signInAnonymously()
         // MARK: id cannot be null
-            let quizes = try await Firestore.firestore().collection("Quiz2").document(quizCategory?.id ?? "").collection("quizes").getDocuments().documents.compactMap {
+            let quizes = try await Firestore.firestore().collection("Quiz2").document(quizCategory.id ?? "NA").collection("quizes").getDocuments().documents.compactMap {
                 try $0.data(as: QuizInfoModel.self)
             }
 

@@ -9,6 +9,8 @@ import FirebaseFirestoreSwift
 
 struct Home: View {
     let quizInspiration: QuizInfoModel
+    let quizCategory: QuizCategoryModel
+
     
     @State private var quizInfo: QuizInfoModel?
     @State private var quizQuestions: [Question] = [];
@@ -22,7 +24,7 @@ struct Home: View {
             VStack(spacing: 10){
                 Text(info.title).font(.title).fontWeight(.semibold).hAlign(.leading)
                 /// - Custom Label
-                
+
                 CustomLabel("list.bullet.rectangle.portrait", "\(quizQuestions.count)", "Multiple Choice Question").padding(.top, 20)
                 
                 CustomLabel("person", "\(info.peopleAttended)", "Attended the exercise").padding(.top, 5)
@@ -39,7 +41,7 @@ struct Home: View {
                 }).vAlign(.bottom).padding(.bottom,30)
                 
             }.padding(15).vAlign(.top).fullScreenCover(isPresented: $startQuiz){
-                QuestionsView(quizInspiration: quizInspiration, quizQuestions: quizQuestions){
+                QuestionsView(quizInspiration: quizInspiration, quizCategory: quizCategory, quizQuestions: quizQuestions){
                     // user has succesfully finished the quiz thus update the BE and UI
                     quizInfo?.peopleAttended += 1
                     dismiss()
@@ -109,23 +111,35 @@ struct Home: View {
     }
 
     func fetchData()async throws{
-//        try await logInUserAnonymous()
-//        let info = try await Firestore.firestore().collection("Quiz2").document(quizInspiration.quizCollectionIDName).getDocument().data(as: QuizInfoModel.self)
-        let questions = try await Firestore.firestore().collection("Quiz").document(quizInspiration.id ?? "NA" ).collection("questions").getDocuments().documents.compactMap{try $0.data(as: Question.self
-        )}
+        let db = Firestore.firestore()
+        let collectionReference = db.collection("Quiz2")
+            .document(quizCategory.id ?? "NA")
+            .collection("quizes")
+            .document(quizInspiration.id ?? "NA")
+            .collection("questions")
+
+        let result = collectionReference.getDocuments { querySnapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                // Documents found, update your UI or model as needed
+                self.quizQuestions = querySnapshot?.documents.compactMap { document in
+                    do {
+                        return try document.data(as: Question.self)
+                    } catch {
+                        print("Error mapping document to Question: \(error)")
+                        return nil
+                    }
+                } ?? []
+            }
+        }
         
         //UI must be updated on Main Thread
         await MainActor.run(body: {
             quizInfo = quizInspiration;
-            quizQuestions = questions;
         })
     }
     
-//    func logInUserAnonymous()async throws {
-//        if !logStatus {
-//            try await Auth.auth().signInAnonymously();
-//        }
-//    }
 }
 
 #Preview {

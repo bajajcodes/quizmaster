@@ -12,7 +12,7 @@ struct QuizCategoryModel: Identifiable, Codable {
     var title: String
     var description: String
     var imageURL: URL
-    var quizes: [QuizInfoModel]?
+//    var quizes: [QuizInfoModel]?
     
     enum CodingKeys: CodingKey {
         case id

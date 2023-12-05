@@ -9,6 +9,7 @@ import FirebaseAuth
 
 struct QuestionsView: View {
     let quizInspiration: QuizInfoModel
+    let quizCategory: QuizCategoryModel
 //    var quizInfo: Info
     @State var quizQuestions: [Question];
     var onFinish: ()->()
@@ -88,7 +89,7 @@ struct QuestionsView: View {
         .environment(\.colorScheme, .dark)
         .fullScreenCover(isPresented: $showScoreCardView) {
             // display score in 100%
-            ScoreCardView(score: score / CGFloat(quizQuestions.count) * 100, quizInspiration: quizInspiration){
+            ScoreCardView(score: score / CGFloat(quizQuestions.count) * 100, quizInspiration: quizInspiration, quizCategory: quizCategory){
                 dismiss()
                 onFinish()
             }
@@ -156,6 +157,7 @@ struct QuestionsView: View {
 struct ScoreCardView: View {
     var score: CGFloat
     let quizInspiration: QuizInfoModel
+    let quizCategory: QuizCategoryModel
     // move to home screen
     var onDismiss: ()->()
     @Environment(\.dismiss) private var dismiss
@@ -191,13 +193,25 @@ struct ScoreCardView: View {
             }.vAlign(.center)
             
             CustomButton(title: "Back To Home", onClick: {
-                Firestore.firestore().collection("Quiz").document(quizInspiration.id ?? "NA" ).updateData([
+                
+                Firestore.firestore()
+                .collection("Quiz2")
+                .document(quizCategory.id ?? "NA")
+                .collection("quizes")
+                .document(quizInspiration.id ?? "NA")
+                .updateData([
                     "peopleAttended": FieldValue.increment(1.0)])
+                
+//                Firestore.firestore().collection("Quiz2").document(quizInspiration.id ?? "NA" ).updateData([
+//                    "peopleAttended": FieldValue.increment(1.0)])
+                
                 guard let userID = Auth.auth().currentUser?.uid else {return}
 
                 print("userID: \(userID)")
+                
                 Firestore.firestore().collection("users").document(userID).updateData([
                     "score": FieldValue.increment(score)])
+                
                 createQuizPlayed()
                 // MARK: store quiz played document
                 dismiss()
